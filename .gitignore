@@ -5,3 +5,5 @@ dist/
 .env
 .env.*
 previews/
+materiais/mini-portfolio/.render.html
+materiais/mini-portfolio/.img/

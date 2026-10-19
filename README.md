@@ -111,6 +111,20 @@ npm run screens
 npm run build
 ```
 
+## Mini portfólio em PDF
+
+Material de 3 páginas A4 para enviar pelo WhatsApp: [`materiais/mini-portfolio-jc-marketing.pdf`](materiais/mini-portfolio-jc-marketing.pdf).
+
+- Fonte editável: `materiais/mini-portfolio/mini-portfolio.html`. Os marcadores `{{...}}` recebem URL, WhatsApp, telefone e e-mail de `site.config.js`.
+- Imagens: as telas reais das demos em `src/assets/img/telas/`, convertidas para JPEG na geração.
+- Para gerar de novo, rode `npm run mini-portfolio` (requer Chrome ou Edge instalado).
+
+O script recusa o PDF se:
+- algum conteúdo ultrapassar a folha;
+- o arquivo não tiver exatamente 3 páginas A4.
+
+Ao final, ele lista os links clicáveis do PDF para conferência.
+
 ## Publicação no GitHub Pages
 
 1. Crie o repositório no GitHub e envie o código para a branch `main`.

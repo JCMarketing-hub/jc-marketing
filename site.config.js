@@ -7,6 +7,8 @@
  */
 export default {
   name: 'JC Marketing',
+  // Endereço público do site (usado em materiais como o mini portfólio em PDF).
+  url: 'https://jcmarketing-hub.github.io/jc-marketing/',
   shortDescription:
     'Agência de presença digital: criação de sites, vitrines digitais, marketing digital e gestão da presença online.',
 

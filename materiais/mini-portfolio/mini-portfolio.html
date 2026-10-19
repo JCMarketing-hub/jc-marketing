@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JC Marketing — Mini portfólio</title>
+    <!--
+      Fonte do mini portfólio em PDF (3 páginas A4).
+      Não abra este arquivo direto para gerar o PDF: use `npm run mini-portfolio`,
+      que preenche os marcadores {{...}} com os dados de site.config.js.
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=block"
+    />
+    <style>
+      @page {
+        size: A4;
+        margin: 0;
+      }
+
+      :root {
+        --graphite: #171321;
+        --purple: #7c3aed;
+        --lilac: #c4b5fd;
+        --orange: #ff6b1a;
+        --white: #f8f7fc;
+        --muted: rgb(248 247 252 / 0.76);
+        --surface: #211b30;
+        --border: rgb(196 181 253 / 0.22);
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      body {
+        background: var(--graphite);
+        color: var(--white);
+        font-family: 'Manrope', 'Inter', sans-serif;
+      }
+
+      /* Cada página tem o tamanho exato de uma folha A4 (794 × 1123 px a 96 dpi). */
+      .page {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 210mm;
+        height: 297mm;
+        padding: 52px 60px 40px;
+        overflow: hidden;
+        background: linear-gradient(200deg, rgb(124 58 237 / 0.26) 0%, rgb(124 58 237 / 0) 38%), var(--graphite);
+        break-after: page;
+      }
+
+      .page:last-child {
+        break-after: auto;
+      }
+
+      /* ---------- Elementos comuns ---------- */
+      .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .logo {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        line-height: 1;
+      }
+
+      .logo-jc {
+        font-weight: 800;
+        font-size: 44px;
+        letter-spacing: -0.07em;
+        padding-right: 0.06em;
+        background: linear-gradient(100deg, #7c3aed 0%, #a855f7 45%, #ff6b1a 90%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+
+      .logo-word {
+        font-weight: 600;
+        font-size: 17px;
+        letter-spacing: 0.32em;
+        text-transform: uppercase;
+      }
+
+      .page-num {
+        color: var(--lilac);
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+      }
+
+      .eyebrow {
+        color: var(--lilac);
+        font-size: 17px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2 {
+        font-weight: 800;
+        letter-spacing: -0.035em;
+        line-height: 1.06;
+      }
+
+      .orange {
+        color: var(--orange);
+      }
+
+      .nowrap {
+        white-space: nowrap;
+      }
+
+      .footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: auto;
+        padding-top: 22px;
+        border-top: 1px solid var(--border);
+        color: var(--muted);
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      .footer a {
+        color: var(--lilac);
+        text-decoration: none;
+        white-space: nowrap;
+      }
+
+      .icon {
+        flex: none;
+        width: 64px;
+        height: 64px;
+        padding: 15px;
+        border: 1.5px solid rgb(124 58 237 / 0.6);
+        border-radius: 16px;
+        background: rgb(124 58 237 / 0.16);
+        color: var(--lilac);
+      }
+
+      /* ---------- Página 1 ---------- */
+      .p1-hero {
+        margin-top: 32px;
+      }
+
+      .p1-hero h1 {
+        margin-top: 14px;
+        font-size: 57px;
+      }
+
+      .p1-hero p {
+        margin-top: 20px;
+        color: var(--muted);
+        font-size: 23px;
+        line-height: 1.42;
+      }
+
+      .devices {
+        position: relative;
+        width: 380px;
+        margin: 30px auto 0;
+      }
+
+      .laptop {
+        padding: 9px 9px 10px;
+        border: 1px solid #3b3450;
+        border-radius: 14px 14px 5px 5px;
+        background: #0d0a14;
+      }
+
+      .laptop img {
+        display: block;
+        width: 100%;
+        border-radius: 5px;
+      }
+
+      .laptop-base {
+        height: 12px;
+        margin: 0 -36px;
+        border-radius: 2px 2px 12px 12px;
+        background: linear-gradient(180deg, #4a4360, #17131f);
+      }
+
+      .phone {
+        position: absolute;
+        right: -64px;
+        bottom: -18px;
+        width: 26%;
+        padding: 6px;
+        border: 1px solid #3b3450;
+        border-radius: 20px;
+        background: #0d0a14;
+        box-shadow: -10px 0 30px -8px rgb(124 58 237 / 0.5);
+      }
+
+      .phone img {
+        display: block;
+        width: 100%;
+        border-radius: 15px;
+      }
+
+      .benefits {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+        margin-top: 36px;
+        list-style: none;
+      }
+
+      .benefits li {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 16px 18px;
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        background: var(--surface);
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 1.25;
+      }
+
+      .benefits .icon {
+        width: 56px;
+        height: 56px;
+        padding: 13px;
+      }
+
+      /* ---------- Página 2 ---------- */
+      .p2-head {
+        margin-top: 32px;
+      }
+
+      .p2-head h2 {
+        margin-top: 12px;
+        font-size: 48px;
+      }
+
+      .services {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+        margin-top: 28px;
+        list-style: none;
+      }
+
+      .service {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 22px;
+        border: 1px solid rgb(124 58 237 / 0.4);
+        border-radius: 22px;
+        background: linear-gradient(180deg, rgb(124 58 237 / 0.14), var(--surface) 60%);
+      }
+
+      .service .icon {
+        width: 54px;
+        height: 54px;
+        padding: 12px;
+      }
+
+      .service h3 {
+        font-size: 27px;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        line-height: 1.15;
+      }
+
+      .service h3 span {
+        display: block;
+        margin-bottom: 4px;
+        color: var(--orange);
+        font-size: 22px;
+      }
+
+      .service p {
+        color: var(--muted);
+        font-size: 21px;
+        line-height: 1.38;
+      }
+
+      .closing {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        margin-top: 24px;
+        padding: 22px 28px;
+        border-left: 5px solid var(--orange);
+        border-radius: 0 20px 20px 0;
+        background: rgb(255 107 26 / 0.09);
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 1.3;
+      }
+
+      /* ---------- Página 3 ---------- */
+      .p3-head {
+        margin-top: 36px;
+      }
+
+      .p3-head h2 {
+        margin-top: 12px;
+        font-size: 48px;
+      }
+
+      .concept-note {
+        display: inline-block;
+        margin-top: 18px;
+        padding: 10px 18px;
+        border-radius: 999px;
+        background: var(--purple);
+        font-size: 19px;
+        font-weight: 700;
+      }
+
+      .projects {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        margin-top: 30px;
+        list-style: none;
+      }
+
+      .project {
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        background: var(--surface);
+        overflow: hidden;
+      }
+
+      .project img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 16 / 10;
+        object-fit: cover;
+        object-position: top center;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .project div {
+        padding: 14px 16px 16px;
+      }
+
+      .project h3 {
+        font-size: 24px;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+      }
+
+      .project p {
+        margin-top: 4px;
+        color: var(--lilac);
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      .contact {
+        margin-top: 28px;
+        padding: 26px 30px;
+        border: 1px solid rgb(124 58 237 / 0.45);
+        border-radius: 24px;
+        background: linear-gradient(210deg, rgb(124 58 237 / 0.28) 0%, rgb(124 58 237 / 0) 55%), var(--surface);
+      }
+
+      .contact h2 {
+        font-size: 40px;
+      }
+
+      .channels {
+        display: grid;
+        gap: 12px;
+        margin-top: 20px;
+        list-style: none;
+      }
+
+      .channels a {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        color: var(--white);
+        font-size: 25px;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .channels svg {
+        flex: none;
+        width: 44px;
+        height: 44px;
+        padding: 10px;
+        border-radius: 12px;
+        background: rgb(124 58 237 / 0.2);
+        color: var(--lilac);
+      }
+
+      .channels small {
+        display: block;
+        color: var(--muted);
+        font-size: 17px;
+        font-weight: 600;
+      }
+
+      .cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 22px;
+        padding: 15px 30px;
+        border-radius: 999px;
+        background: var(--orange);
+        color: var(--graphite);
+        font-size: 24px;
+        font-weight: 800;
+        text-decoration: none;
+      }
+
+      .cta svg {
+        width: 26px;
+        height: 26px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ================= Página 1 — Apresentação ================= -->
+    <section class="page">
+      <div class="top">
+        <span class="logo"><span class="logo-jc">JC</span><span class="logo-word">Marketing</span></span>
+        <span class="page-num">01 / 03</span>
+      </div>
+
+      <div class="p1-hero">
+        <p class="eyebrow">Estratégia • Design • Presença digital</p>
+        <h1>Sua empresa merece uma presença digital <span class="orange nowrap">à altura.</span></h1>
+        <p>A JC Marketing cria sites e soluções digitais para ajudar empresas a apresentar seus serviços, valorizar sua marca e facilitar o contato com clientes.</p>
+      </div>
+
+      <div class="devices">
+        <div class="laptop">
+          <img src="{{img}}/autotech-desktop.webp" alt="Projeto-conceito AutoTech em um notebook" />
+        </div>
+        <div class="laptop-base"></div>
+        <div class="phone">
+          <img src="{{img}}/autotech-mobile.webp" alt="" />
+        </div>
+      </div>
+
+      <ul class="benefits">
+        <li>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          Apresentação profissional
+        </li>
+        <li>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+          Mais facilidade para o cliente encontrar informações
+        </li>
+        <li>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.6-5.2A8.5 8.5 0 1 1 21 11.5z"/></svg>
+          Contato simples e direto
+        </li>
+      </ul>
+
+      <div class="footer">
+        <span>Conheça nossas soluções digitais <span class="orange">→</span></span>
+        <a href="{{siteUrl}}">{{siteLabel}}</a>
+      </div>
+    </section>
+
+    <!-- ================= Página 2 — Serviços ================= -->
+    <section class="page">
+      <div class="top">
+        <span class="logo"><span class="logo-jc">JC</span><span class="logo-word">Marketing</span></span>
+        <span class="page-num">02 / 03</span>
+      </div>
+
+      <div class="p2-head">
+        <p class="eyebrow">Nossos serviços</p>
+        <h2>O que podemos fazer pelo seu negócio</h2>
+      </div>
+
+      <ul class="services">
+        <li class="service">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          <h3><span>01</span>Criação de sites</h3>
+          <p>Sites institucionais, comerciais e landing pages.</p>
+        </li>
+        <li class="service">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 7h12l1 13H5z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+          <h3><span>02</span>Vitrines digitais</h3>
+          <p>Cardápios, catálogos de produtos e serviços.</p>
+        </li>
+        <li class="service">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11v2a1 1 0 0 0 1 1h2l5 4V6L6 10H4a1 1 0 0 0-1 1z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg>
+          <h3><span>03</span>Materiais de marketing</h3>
+          <p>Artes promocionais, campanhas e peças para redes sociais.</p>
+        </li>
+        <li class="service">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5a7 7 0 0 0-14 0C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+          <h3><span>04</span>Presença digital</h3>
+          <p>Perfil da Empresa no Google, publicação de sites e atualização de informações digitais.</p>
+        </li>
+      </ul>
+
+      <p class="closing">A solução certa depende do momento e da necessidade do seu negócio.</p>
+
+      <div class="footer">
+        <span>Veja os projetos na próxima página <span class="orange">→</span></span>
+        <a href="{{siteUrl}}">{{siteLabel}}</a>
+      </div>
+    </section>
+
+    <!-- ================= Página 3 — Projetos e contato ================= -->
+    <section class="page">
+      <div class="top">
+        <span class="logo"><span class="logo-jc">JC</span><span class="logo-word">Marketing</span></span>
+        <span class="page-num">03 / 03</span>
+      </div>
+
+      <div class="p3-head">
+        <p class="eyebrow">Portfólio</p>
+        <h2>Veja o que podemos criar</h2>
+        <p class="concept-note">Projetos-conceito: demonstrações fictícias de soluções digitais.</p>
+      </div>
+
+      <ul class="projects">
+        <li class="project">
+          <img src="{{img}}/burger-house-desktop.webp" alt="Tela do projeto-conceito Burger House" />
+          <div><h3>Burger House</h3><p>Gastronomia</p></div>
+        </li>
+        <li class="project">
+          <img src="{{img}}/autotech-desktop.webp" alt="Tela do projeto-conceito AutoTech" />
+          <div><h3>AutoTech</h3><p>Serviços automotivos</p></div>
+        </li>
+        <li class="project">
+          <img src="{{img}}/studio-belle-desktop.webp" alt="Tela do projeto-conceito Studio Belle" />
+          <div><h3>Studio Belle</h3><p>Beleza e estética</p></div>
+        </li>
+      </ul>
+
+      <div class="contact">
+        <h2>Vamos conversar sobre o seu negócio?</h2>
+        <ul class="channels">
+          <li>
+            <a href="{{whatsappUrl}}">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.6-5.2A8.5 8.5 0 1 1 21 11.5z"/></svg>
+              <span><small>WhatsApp</small>{{phone}}</span>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:{{email}}">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+              <span><small>E-mail</small>{{email}}</span>
+            </a>
+          </li>
+          <li>
+            <a href="{{siteUrl}}">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+              <span><small>Portfólio</small>{{siteLabel}}</span>
+            </a>
+          </li>
+        </ul>
+        <a class="cta" href="{{whatsappUrl}}">
+          Chamar no WhatsApp
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+
+      <div class="footer">
+        <span>© {{year}} JC Marketing</span>
+        <a href="{{siteUrl}}">{{siteUrl}}</a>
+      </div>
+    </section>
+    <script>
+      // Usado por scripts/build-mini-portfolio.mjs para detectar conteúdo cortado.
+      document.fonts.ready.then(() => {
+        const cut = [...document.querySelectorAll('.page')]
+          .map((page, i) => {
+            const extra = Math.max(page.scrollHeight - page.clientHeight, page.scrollWidth - page.clientWidth);
+            return extra > 1 ? `página ${i + 1} (+${extra}px)` : '';
+          })
+          .filter(Boolean);
+        document.body.dataset.overflow = cut.join(',') || 'none';
+      });
+    </script>
+  </body>
+</html>

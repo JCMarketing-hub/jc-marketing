@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- @include head-common -->
+    <title>Burger House (projeto-conceito fictício) | JC Marketing</title>
+    <meta
+      name="description"
+      content="Burger House é um projeto-conceito fictício da JC Marketing: vitrine digital de hamburgueria com cardápio e pedido demonstrativo."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Burger House — projeto-conceito fictício da JC Marketing" />
+    <meta property="og:description" content="Demonstração de cardápio digital e pedido on-line para restaurantes." />
+    <!-- @seo path="/projetos/burger-house/" -->
+    <link rel="stylesheet" href="/src/styles/base.css" />
+    <link rel="stylesheet" href="/src/styles/demos.css" />
+  </head>
+  <body class="theme-burger">
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <!-- @include demo-banner -->
+
+    <header class="demo-header">
+      <div class="container">
+        <a class="demo-logo" href="#conteudo">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M5 14a11 8 0 0 1 22 0z" fill="currentColor" stroke="none"/><path d="M4 18h24M5 22h22a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3z"/></svg>
+          Burger House
+        </a>
+        <button class="demo-toggle" type="button" aria-expanded="false" aria-controls="menu-burger" data-nav-toggle>
+          <span class="visually-hidden">Abrir menu</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+        <nav class="demo-nav" id="menu-burger" aria-label="Navegação da Burger House" data-nav>
+          <ul role="list">
+            <li><a href="#cardapio">Cardápio</a></li>
+            <li><a href="#sobre">A casa</a></li>
+          </ul>
+          <a class="btn btn-primary" href="#pedido"><span>Meu pedido (<span data-order-count>0</span>)</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section class="demo-hero" aria-labelledby="bh-title">
+        <div class="container">
+          <p class="kicker">Hamburgueria artesanal · demonstração</p>
+          <h1 id="bh-title">Burgers feitos na hora, do jeito que você gosta.</h1>
+          <p>Escolha seus favoritos no cardápio e monte o pedido em poucos toques. Esta é uma vitrine digital fictícia, criada para mostrar como um restaurante pode vender pelo celular.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#cardapio">Ver cardápio</a>
+            <a class="btn btn-secondary" href="#sobre">Conhecer a casa</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="demo-section alt" id="cardapio" aria-labelledby="cardapio-title">
+        <div class="container">
+          <header class="demo-section-head">
+            <h2 id="cardapio-title">Cardápio</h2>
+            <p>Itens e descrições ilustrativos. Por ser um projeto-conceito, não exibimos preços reais.</p>
+          </header>
+
+          <div class="menu-layout">
+            <div>
+              <section class="menu-category" aria-labelledby="cat-burgers">
+                <h3 id="cat-burgers">Burgers</h3>
+                <ul class="menu-items" role="list">
+                  <li class="menu-item">
+                    <div><h4>Clássico da Casa</h4><p>Pão brioche, blend bovino, queijo prato, alface, tomate e molho da casa.</p></div>
+                    <button class="btn btn-primary" type="button" data-add-item="Clássico da Casa">Adicionar <span class="visually-hidden">Clássico da Casa</span></button>
+                  </li>
+                  <li class="menu-item">
+                    <div><h4>Duplo Cheddar</h4><p>Dois blends, cheddar cremoso, cebola caramelizada e picles.</p></div>
+                    <button class="btn btn-primary" type="button" data-add-item="Duplo Cheddar">Adicionar <span class="visually-hidden">Duplo Cheddar</span></button>
+                  </li>
+                  <li class="menu-item">
+                    <div><h4>Smash Bacon</h4><p>Smash burger, bacon crocante, queijo americano e maionese defumada.</p></div>
+                    <button class="btn btn-primary" type="button" data-add-item="Smash Bacon">Adicionar <span class="visually-hidden">Smash Bacon</span></button>
+                  </li>
+                  <li class="menu-item">
+                    <div><h4>Veggie da Horta</h4><p>Hambúrguer de grão-de-bico, rúcula, tomate e molho de ervas.</p></div>
+                    <button class="btn btn-primary" type="button" data-add-item="Veggie da Horta">Adicionar <span class="visually-hidden">Veggie da Horta</span></button>
+                  </li>
+                </ul>
+              </section>
+
+              <section class="menu-category" aria-labelledby="cat-acomp">
+                <h3 id="cat-acomp">Acompanhamentos</h3>
+                <ul class="menu-items" role="list">
+                  <li class="menu-item">
+                    <div><h4>Batata rústica</h4><p>Batatas com casca, alecrim e sal grosso.</p></div>
+                    <button class="btn btn-primary" type="button" data-add-item="Batata rústica">Adicionar <span class="visually-hidden">Batata rústica</span></button>
+                  </li>
+                  <li class="menu-item">
+                    <div><h4>Onion rings</h4><p>Anéis de cebola empanados, servidos com molho barbecue.</p></div>
+                    <button class="btn btn-primary" type="button" data-add-item="Onion rings">Adicionar <span class="visually-hidden">Onion rings</span></button>
+                  </li>
+                </ul>
+              </section>
+
+              <section class="menu-category" aria-labelledby="cat-bebidas">
+                <h3 id="cat-bebidas">Bebidas</h3>
+                <ul class="menu-items" role="list">
+                  <li class="menu-item">
+                    <div><h4>Limonada da casa</h4><p>Limão, hortelã e gelo.</p></div>
+                    <button class="btn btn-primary" type="button" data-add-item="Limonada da casa">Adicionar <span class="visually-hidden">Limonada da casa</span></button>
+                  </li>
+                  <li class="menu-item">
+                    <div><h4>Milkshake de baunilha</h4><p>Sorvete de baunilha batido com leite gelado.</p></div>
+                    <button class="btn btn-primary" type="button" data-add-item="Milkshake de baunilha">Adicionar <span class="visually-hidden">Milkshake de baunilha</span></button>
+                  </li>
+                </ul>
+              </section>
+            </div>
+
+            <aside class="order-panel" id="pedido" aria-labelledby="pedido-title" data-order>
+              <h3 id="pedido-title">Seu pedido <span class="order-count" data-order-count>0</span></h3>
+              <p class="order-empty" data-order-empty>Nenhum item adicionado ainda.</p>
+              <ul class="order-list" role="list" data-order-list></ul>
+              <button class="btn btn-primary" type="button" data-order-finish disabled>Finalizar pedido</button>
+              <p class="disclaimer">Pedido demonstrativo: nenhum dado é enviado.</p>
+              <div class="form-status" role="status" aria-live="polite" data-form-status></div>
+            </aside>
+          </div>
+          <p class="visually-hidden" aria-live="polite" data-order-live></p>
+        </div>
+      </section>
+
+      <section class="demo-section" id="sobre" aria-labelledby="sobre-title">
+        <div class="container split">
+          <header class="demo-section-head">
+            <h2 id="sobre-title">Uma casa fictícia, uma experiência real de site</h2>
+            <p>Este projeto mostra os recursos que uma hamburgueria pode ter na sua vitrine digital.</p>
+          </header>
+          <ul class="check-list" role="list">
+            <li><span><strong>Cardápio sempre atualizado</strong> — categorias claras e descrições que dão vontade de pedir.</span></li>
+            <li><span><strong>Pedido em poucos toques</strong> — fluxo pensado para o celular, pronto para integrar ao WhatsApp.</span></li>
+            <li><span><strong>Informações essenciais à vista</strong> — horários, endereço e formas de contato fáceis de encontrar.</span></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <a class="btn btn-primary order-jump" href="#pedido"><span>Ver pedido (<span data-order-count>0</span>)</span></a>
+
+    <!-- @include demo-footer -->
+    <script type="module" src="/src/scripts/demo.js"></script>
+  </body>
+</html>

@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- @include head-common -->
+    <title>Studio Belle (projeto-conceito fictício) | JC Marketing</title>
+    <meta
+      name="description"
+      content="Studio Belle é um projeto-conceito fictício da JC Marketing: site para estúdio de beleza e estética com serviços e agendamento demonstrativo."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Studio Belle — projeto-conceito fictício da JC Marketing" />
+    <meta property="og:description" content="Demonstração de site para beleza e estética com agendamento on-line." />
+    <!-- @seo path="/projetos/studio-belle/" -->
+    <link rel="stylesheet" href="/src/styles/base.css" />
+    <link rel="stylesheet" href="/src/styles/demos.css" />
+  </head>
+  <body class="theme-belle">
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <!-- @include demo-banner -->
+
+    <header class="demo-header">
+      <div class="container">
+        <a class="demo-logo" href="#conteudo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c2 3.5 2 6.5 0 9-2-2.5-2-5.5 0-9z"/><path d="M12 12c3.5-2 6.5-2 9 0-2.5 2-5.5 2-9 0zM12 12c-3.5-2-6.5-2-9 0 2.5 2 5.5 2 9 0z"/><path d="M12 12v9"/></svg>
+          Studio Belle
+        </a>
+        <button class="demo-toggle" type="button" aria-expanded="false" aria-controls="menu-belle" data-nav-toggle>
+          <span class="visually-hidden">Abrir menu</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+        <nav class="demo-nav" id="menu-belle" aria-label="Navegação do Studio Belle" data-nav>
+          <ul role="list">
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#experiencia">Experiência</a></li>
+          </ul>
+          <a class="btn btn-primary" href="#agendamento">Agendar horário</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section class="demo-hero" aria-labelledby="sb-title">
+        <div class="container">
+          <p class="kicker">Beleza e estética · demonstração</p>
+          <h1 id="sb-title">Um momento só seu, com cuidado em cada detalhe.</h1>
+          <p>Cabelo, unhas, sobrancelhas e estética facial em um ambiente acolhedor. Este é um estúdio fictício, criado para mostrar como um negócio de beleza pode apresentar seus serviços e facilitar agendamentos.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#agendamento">Agendar horário</a>
+            <a class="btn btn-secondary" href="#servicos">Conhecer serviços</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="demo-section alt" id="servicos" aria-labelledby="servicos-title">
+        <div class="container">
+          <header class="demo-section-head">
+            <h2 id="servicos-title">Serviços</h2>
+            <p>Serviços ilustrativos. Por ser um projeto-conceito, não exibimos preços.</p>
+          </header>
+          <ul class="card-grid" role="list">
+            <li class="card">
+              <h3>Cabelo</h3>
+              <p>Corte, escova, hidratação e coloração com produtos adequados ao seu tipo de fio.</p>
+            </li>
+            <li class="card">
+              <h3>Unhas</h3>
+              <p>Manicure e pedicure com cuidado, higiene e acabamento impecável.</p>
+            </li>
+            <li class="card">
+              <h3>Sobrancelhas</h3>
+              <p>Design personalizado de acordo com o formato do seu rosto.</p>
+            </li>
+            <li class="card">
+              <h3>Estética facial</h3>
+              <p>Limpeza de pele e cuidados faciais para uma pele saudável.</p>
+            </li>
+            <li class="card">
+              <h3>Maquiagem</h3>
+              <p>Produções para eventos, ensaios e ocasiões especiais.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="demo-section" id="experiencia" aria-labelledby="exp-title">
+        <div class="container split">
+          <header class="demo-section-head">
+            <h2 id="exp-title">A experiência Belle</h2>
+            <p>O que um site de beleza precisa comunicar para gerar confiança.</p>
+          </header>
+          <ul class="check-list" role="list">
+            <li><span><strong>Atendimento com hora marcada</strong> — sem espera e com tempo dedicado a você.</span></li>
+            <li><span><strong>Ambiente acolhedor</strong> — conforto do início ao fim do atendimento.</span></li>
+            <li><span><strong>Agendamento simples</strong> — escolha serviço, dia e horário em poucos passos.</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="demo-section alt" id="agendamento" aria-labelledby="ag-title">
+        <div class="container split">
+          <header class="demo-section-head">
+            <h2 id="ag-title">Agende seu horário</h2>
+            <p>Escolha o serviço, o dia e o horário de preferência. Neste projeto-conceito, o agendamento é apenas demonstrativo e nenhum horário é reservado.</p>
+          </header>
+
+          <form class="demo-form" novalidate data-demo-form data-demo-message="O Studio Belle é um projeto-conceito fictício. Em um site real, a solicitação seria confirmada pelo estúdio via WhatsApp ou sistema de agenda.">
+            <div class="field">
+              <label for="sb-servico">Serviço</label>
+              <select id="sb-servico" name="servico" required>
+                <option value="">Selecione um serviço</option>
+                <option>Cabelo</option>
+                <option>Unhas</option>
+                <option>Sobrancelhas</option>
+                <option>Estética facial</option>
+                <option>Maquiagem</option>
+              </select>
+            </div>
+            <div class="grid-2">
+              <div class="field">
+                <label for="sb-data">Data</label>
+                <input id="sb-data" name="data" type="date" required />
+              </div>
+              <div class="field">
+                <label for="sb-hora">Horário</label>
+                <select id="sb-hora" name="horario" required>
+                  <option value="">Selecione</option>
+                  <option>09:00</option>
+                  <option>10:00</option>
+                  <option>11:00</option>
+                  <option>13:00</option>
+                  <option>14:00</option>
+                  <option>15:00</option>
+                  <option>16:00</option>
+                  <option>17:00</option>
+                </select>
+              </div>
+            </div>
+            <div class="grid-2">
+              <div class="field">
+                <label for="sb-nome">Nome</label>
+                <input id="sb-nome" name="nome" type="text" autocomplete="name" required />
+              </div>
+              <div class="field">
+                <label for="sb-tel">Telefone / WhatsApp</label>
+                <input id="sb-tel" name="telefone" type="tel" autocomplete="tel" inputmode="tel" required />
+              </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Solicitar agendamento</button>
+            <p class="disclaimer">Agendamento demonstrativo: nenhum horário é reservado e nenhum dado é enviado.</p>
+            <div class="form-status" role="status" aria-live="polite" data-form-status></div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- @include demo-footer -->
+    <script type="module" src="/src/scripts/demo.js"></script>
+  </body>
+</html>

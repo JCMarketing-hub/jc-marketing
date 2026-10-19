@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- @include head-common -->
+    <title>Página não encontrada | JC Marketing</title>
+    <meta name="description" content="A página que você procurou não foi encontrada." />
+    <meta name="robots" content="noindex" />
+    <link rel="stylesheet" href="/src/styles/base.css" />
+    <link rel="stylesheet" href="/src/styles/home.css" />
+  </head>
+  <body>
+    <!-- @include header -->
+    <main id="conteudo" class="section">
+      <div class="container not-found">
+        <p class="eyebrow">Erro 404</p>
+        <h1>Página não encontrada</h1>
+        <p>O endereço pode ter mudado ou não existe mais. Que tal voltar para o início?</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="{{base}}">Voltar para o início</a>
+          <a class="btn btn-secondary" href="{{base}}#portfolio">Ver portfólio</a>
+        </div>
+      </div>
+    </main>
+    <!-- @include footer -->
+    <script type="module" src="/src/scripts/main.js"></script>
+  </body>
+</html>

@@ -1286,3 +1286,69 @@
   color: var(--text-muted);
   font-size: 1.1rem;
 }
+
+/* ==========================================================================
+   Botão flutuante do WhatsApp
+   ========================================================================== */
+.whatsapp-float {
+  position: fixed;
+  right: max(16px, env(safe-area-inset-right));
+  bottom: max(16px, env(safe-area-inset-bottom));
+  z-index: 60;
+  display: inline-flex;
+  align-items: center;
+  height: 58px;
+  padding: 0 15px;
+  border-radius: 999px;
+  /* Verde mais escuro que o oficial para manter contraste 3:1 com o ícone branco. */
+  background: #1da851;
+  color: #ffffff;
+  text-decoration: none;
+  box-shadow: 0 12px 28px -8px rgb(0 0 0 / 0.6), 0 0 0 1px rgb(255 255 255 / 0.08) inset;
+  transition: background-color 0.2s var(--ease), transform 0.2s var(--ease);
+}
+
+.whatsapp-float:hover {
+  background: #17914a;
+  transform: translateY(-2px);
+}
+
+.whatsapp-float svg {
+  flex: none;
+  width: 28px;
+  height: 28px;
+}
+
+/* O texto aparece ao passar o mouse ou focar pelo teclado. */
+.whatsapp-float-label {
+  max-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: 700;
+  font-size: 0.95rem;
+  opacity: 0;
+  transition: max-width 0.3s var(--ease), opacity 0.2s var(--ease), margin 0.3s var(--ease);
+}
+
+.whatsapp-float:hover .whatsapp-float-label,
+.whatsapp-float:focus-visible .whatsapp-float-label {
+  max-width: 180px;
+  margin-left: 10px;
+  opacity: 1;
+}
+
+.whatsapp-float:focus-visible {
+  outline: 3px solid var(--jc-white);
+  outline-offset: 3px;
+}
+
+/* Espaço extra para o botão não cobrir o fim do rodapé. */
+.site-footer {
+  padding-bottom: 72px;
+}
+
+@media print {
+  .whatsapp-float {
+    display: none;
+  }
+}

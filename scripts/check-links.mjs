@@ -25,7 +25,7 @@ for (const [pagePath, html] of pages) {
   if (!/<meta\s+name="description"/.test(html)) errors.push(`${label}: falta meta description.`);
   const h1 = (html.match(/<h1[\s>]/g) || []).length;
   if (h1 !== 1) errors.push(`${label}: esperado 1 <h1>, encontrado ${h1}.`);
-  if (/\{\{\w+\}\}|<!--\s*@(include|seo|contacts|social)/.test(html)) {
+  if (/\{\{\w+\}\}|<!--\s*@(include|seo|contacts|social|whatsapp-float)/.test(html)) {
     errors.push(`${label}: marcador de template não processado.`);
   }
   if (pagePath.includes('/projetos/') && !/Projeto-conceito fictício/.test(html)) {

@@ -44,7 +44,7 @@ function initContactForm() {
   submit.textContent = channel === 'whatsapp' ? 'Enviar pelo WhatsApp' : 'Enviar por e-mail';
   note.textContent =
     channel === 'whatsapp'
-      ? 'Ao enviar, o WhatsApp será aberto com sua mensagem pronta. Basta confirmar o envio por lá.'
+      ? 'O WhatsApp abre com a sua mensagem pronta. É só confirmar o envio.'
       : 'Ao enviar, seu aplicativo de e-mail será aberto com a mensagem pronta para você confirmar.';
 
   form.addEventListener('submit', (event) => {
@@ -56,7 +56,7 @@ function initContactForm() {
     const text = [
       `Olá, ${site.name}! Meu nome é ${data.get('nome')}.`,
       data.get('empresa') ? `Empresa: ${data.get('empresa')}` : null,
-      `Serviço de interesse: ${data.get('servico')}`,
+      `Preciso de: ${data.get('servico')}`,
       '',
       String(data.get('mensagem')),
     ]

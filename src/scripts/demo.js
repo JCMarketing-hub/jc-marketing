@@ -6,7 +6,7 @@ initDemoForms();
 initDemoOrder();
 
 /**
- * Formulários das páginas-conceito: validam os dados, mas deixam claro que nada
+ * Formulários das páginas de exemplo: validam os dados, mas deixam claro que nada
  * é enviado — são apenas demonstrações.
  */
 function initDemoForms() {
@@ -23,7 +23,7 @@ function initDemoForms() {
       showStatus(
         status,
         'Demonstração: nenhuma solicitação foi enviada.',
-        form.dataset.demoMessage || 'Este é um projeto-conceito fictício da JC Marketing.',
+        form.dataset.demoMessage || 'Este é um exemplo fictício da JC Marketing.',
       );
     });
   });
@@ -86,7 +86,7 @@ function initDemoOrder() {
     showStatus(
       status,
       'Demonstração: nenhum pedido foi enviado.',
-      'A Burger House é um projeto-conceito fictício. Em um site real, este botão enviaria o pedido ao WhatsApp ou ao sistema do restaurante.',
+      'A Burger House é um exemplo fictício. Em um site real, este botão enviaria o pedido ao WhatsApp ou ao sistema do restaurante.',
     );
   });
 

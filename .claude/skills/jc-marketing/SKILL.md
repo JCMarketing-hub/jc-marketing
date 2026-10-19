@@ -50,20 +50,30 @@ Tarefa recebida (pode estar vazia): `$ARGUMENTS`
 
 Mantenha, nesta ordem (ajustes de ordem só com justificativa de conversão):
 
-1. **Cabeçalho e navegação** — logo, âncoras para as seções, CTA de contato; menu mobile acessível (botão com `aria-expanded`, fecha com Esc).
-2. **Hero** — título exato: **"Sua empresa merece uma presença digital à altura."**, subtítulo e CTA principal em laranja.
-3. **Serviços**, divididos em:
-   1. Criação de sites
-   2. Vitrines digitais
-   3. Marketing digital
-   4. Presença e gestão digital
-4. **Portfólio** — cards para os três projetos-conceito, com selo visível de "Projeto-conceito fictício".
-5. **Benefícios**.
-6. **Processo de trabalho** — etapas claras.
-7. **Apresentação da agência**.
-8. **Perguntas frequentes** — acordeão acessível (`<details>/<summary>` ou botões com `aria-expanded`).
-9. **Contato e CTA final**.
-10. **Rodapé** — dados comerciais vindos da configuração central, links úteis, aviso sobre projetos fictícios.
+1. **Cabeçalho e navegação** — Início · Serviços · Exemplos · Como funciona · Quem somos · Contato, e CTA "Pedir orçamento"; menu mobile acessível (botão com `aria-expanded`, fecha com Esc).
+2. **Topo (hero)** — título aprovado: **"Ajudamos o seu negócio a ser encontrado, entendido e chamado no WhatsApp."**, texto de apoio com a lista concreta de serviços e CTA principal em laranja ("Pedir orçamento grátis").
+3. **"Talvez isso aconteça no seu negócio"** — situações do dia a dia (restaurante, loja, clínica, autônomo, quem só usa Instagram, promoções), sempre como hipóteses, nunca como clientes.
+4. **Serviços** — "O que podemos criar para a sua empresa". **Foco principal: sites e páginas de divulgação.**
+   1. Site para a sua empresa *(foco)*
+   2. Página para divulgar um serviço ou uma promoção *(foco)*
+   3. Cardápio ou catálogo on-line
+   4. Artes para divulgação (inclui arte para impressos; a impressão fica com o cliente)
+   5. Sua empresa certa no Google (Perfil da Empresa no Google)
+5. **Exemplos** — cards dos três exemplos com selo "Exemplo fictício" e a frase "não são clientes reais".
+6. **Por que conversar com a JC Marketing** — diferenciais de atendimento, sem repetir os serviços.
+7. **Como funciona** — conversa, orçamento gratuito, criação (até 2 rodadas de ajustes), publicação, atualizações combinadas à parte.
+8. **Quem somos** — sócios Juliana Moreira (formada em Marketing, 6 anos na área, vendas consultivas) e Paul Lugo (Tecnologia da Informação há mais de 15 anos). Sem fotos por enquanto. Não atribua especialidades, números ou resultados não informados.
+9. **Perguntas frequentes** — acordeão acessível (`<details>/<summary>` ou botões com `aria-expanded`).
+10. **Contato** — formulário que abre o WhatsApp com a mensagem pronta.
+11. **Rodapé** — dados comerciais vindos da configuração central, links úteis, aviso sobre exemplos fictícios.
+
+### Comunicação
+
+- Público: pequenos negócios, autônomos e empresas de **São Manuel, Botucatu e região**. Outras cidades são atendidas a distância; no interior de São Paulo, o atendimento pode ser presencial.
+- Escreva para quem não entende de marketing ou tecnologia. Explique o que cada coisa faz e dê um exemplo do dia a dia.
+- Evite jargões quando houver forma simples: "landing page" → "página para divulgar um serviço ou promoção"; "presença digital", "soluções digitais", "conversão" → diga o que acontece na prática (ser encontrado, entender, chamar no WhatsApp).
+- Voz: "nós" para a JC; nomes individuais só em "Quem somos".
+- Condições reais confirmadas: orçamento gratuito; serviços podem ser contratados separadamente; até 2 rodadas de ajustes; atualizações depois da entrega combinadas à parte; textos criados pela JC; sem fotos do cliente, usa banco de imagens ou ilustrações com IA. Não invente outras.
 
 ## 5. Projetos demonstrativos (páginas próprias)
 
@@ -73,8 +83,9 @@ Mantenha, nesta ordem (ajustes de ordem só com justificativa de conversão):
 | **AutoTech** | Serviços automotivos | Apresentação dos serviços e orçamento |
 | **Studio Belle** | Beleza e estética | Serviços e agendamento demonstrativo |
 
-- Cada página deve exibir de forma clara (topo e rodapé) que é um **projeto-conceito fictício criado pela JC Marketing**. Nunca apresentar como cliente real, nem com depoimentos, números ou logos de clientes.
-- Cada página tem link de volta para o site principal e CTA "Quero um site assim" apontando para o contato da JC Marketing.
+- Cada página deve exibir de forma clara (topo e rodapé) que é um **exemplo fictício criado pela JC Marketing**. Nunca apresentar como cliente real, nem com depoimentos, números ou logos de clientes.
+- Cada página tem link de volta para os exemplos no site principal e CTA "Quero algo assim para o meu negócio" apontando para o contato da JC Marketing.
+- Depois de alterar uma demo, recapture as telas (`npm run screens`, com o preview rodando) e gere de novo o mini portfólio em PDF (`npm run mini-portfolio`).
 - Fluxos de pedido/orçamento/agendamento são **demonstrativos**: não simule envio bem-sucedido. Use uma mensagem honesta (ex.: "Demonstração — nenhum pedido é enviado") ou direcione para o contato real da agência.
 
 ## 6. Regras de implementação

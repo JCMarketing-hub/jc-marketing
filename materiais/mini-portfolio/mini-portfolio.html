@@ -131,8 +131,9 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        gap: 24px;
         margin-top: auto;
-        padding-top: 22px;
+        padding-top: 18px;
         border-top: 1px solid var(--border);
         color: var(--muted);
         font-size: 18px;
@@ -163,7 +164,7 @@
 
       .p1-hero h1 {
         margin-top: 14px;
-        font-size: 57px;
+        font-size: 50px;
       }
 
       .p1-hero p {
@@ -175,8 +176,8 @@
 
       .devices {
         position: relative;
-        width: 380px;
-        margin: 30px auto 0;
+        width: 340px;
+        margin: 28px auto 0;
       }
 
       .laptop {
@@ -251,31 +252,32 @@
 
       .p2-head h2 {
         margin-top: 12px;
-        font-size: 48px;
+        font-size: 44px;
       }
 
       .services {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 14px;
-        margin-top: 28px;
+        gap: 12px;
+        margin-top: 24px;
         list-style: none;
       }
 
       .service {
         display: flex;
         flex-direction: column;
-        gap: 10px;
-        padding: 20px 22px;
+        gap: 8px;
+        padding: 18px 20px;
         border: 1px solid rgb(124 58 237 / 0.4);
         border-radius: 22px;
         background: linear-gradient(180deg, rgb(124 58 237 / 0.14), var(--surface) 60%);
       }
 
-      .service .icon {
-        width: 54px;
-        height: 54px;
-        padding: 12px;
+      .service .icon,
+      .service-wide .icon {
+        width: 48px;
+        height: 48px;
+        padding: 11px;
       }
 
       .service h3 {
@@ -294,8 +296,68 @@
 
       .service p {
         color: var(--muted);
+        font-size: 20px;
+        line-height: 1.38;
+      }
+
+      .service.is-focus {
+        border-color: rgb(255 107 26 / 0.6);
+        background: linear-gradient(180deg, rgb(255 107 26 / 0.12), var(--surface) 60%);
+      }
+
+      .service-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .focus-tag {
+        padding: 6px 14px;
+        border: 1.5px solid rgb(255 107 26 / 0.7);
+        border-radius: 999px;
+        color: #ffb088;
+        font-size: 17px;
+        font-weight: 700;
+      }
+
+      .service-wide {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        margin-top: 12px;
+        padding: 16px 20px;
+        border: 1px solid rgb(124 58 237 / 0.4);
+        border-radius: 22px;
+        background: var(--surface);
+      }
+
+      .service-wide h3 {
+        font-size: 27px;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        line-height: 1.15;
+      }
+
+      .service-wide h3 span {
+        color: var(--orange);
+      }
+
+      .service-wide p {
+        margin-top: 6px;
+        color: var(--muted);
         font-size: 21px;
         line-height: 1.38;
+      }
+
+      .contact-sub {
+        margin-top: 10px;
+        color: var(--muted);
+        font-size: 20px;
+        line-height: 1.4;
+      }
+
+      .contact-sub strong {
+        color: var(--orange);
       }
 
       .closing {
@@ -319,13 +381,13 @@
 
       .p3-head h2 {
         margin-top: 12px;
-        font-size: 48px;
+        font-size: 40px;
       }
 
       .concept-note {
         display: inline-block;
-        margin-top: 18px;
-        padding: 10px 18px;
+        margin-top: 14px;
+        padding: 9px 18px;
         border-radius: 999px;
         background: var(--purple);
         font-size: 19px;
@@ -336,7 +398,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 16px;
-        margin-top: 30px;
+        margin-top: 24px;
         list-style: none;
       }
 
@@ -357,11 +419,11 @@
       }
 
       .project div {
-        padding: 14px 16px 16px;
+        padding: 12px 16px 14px;
       }
 
       .project h3 {
-        font-size: 24px;
+        font-size: 22px;
         font-weight: 800;
         letter-spacing: -0.02em;
       }
@@ -374,21 +436,21 @@
       }
 
       .contact {
-        margin-top: 28px;
-        padding: 26px 30px;
+        margin-top: 24px;
+        padding: 22px 28px;
         border: 1px solid rgb(124 58 237 / 0.45);
         border-radius: 24px;
         background: linear-gradient(210deg, rgb(124 58 237 / 0.28) 0%, rgb(124 58 237 / 0) 55%), var(--surface);
       }
 
       .contact h2 {
-        font-size: 40px;
+        font-size: 36px;
       }
 
       .channels {
         display: grid;
-        gap: 12px;
-        margin-top: 20px;
+        gap: 10px;
+        margin-top: 16px;
         list-style: none;
       }
 
@@ -397,7 +459,7 @@
         align-items: center;
         gap: 16px;
         color: var(--white);
-        font-size: 25px;
+        font-size: 23px;
         font-weight: 700;
         text-decoration: none;
       }
@@ -423,8 +485,8 @@
         display: inline-flex;
         align-items: center;
         gap: 12px;
-        margin-top: 22px;
-        padding: 15px 30px;
+        margin-top: 18px;
+        padding: 14px 28px;
         border-radius: 999px;
         background: var(--orange);
         color: var(--graphite);
@@ -448,14 +510,14 @@
       </div>
 
       <div class="p1-hero">
-        <p class="eyebrow">Estratégia • Design • Presença digital</p>
-        <h1>Sua empresa merece uma presença digital <span class="orange nowrap">à altura.</span></h1>
-        <p>A JC Marketing cria sites e soluções digitais para ajudar empresas a apresentar seus serviços, valorizar sua marca e facilitar o contato com clientes.</p>
+        <p class="eyebrow">Sites e páginas de divulgação</p>
+        <h1>Ajudamos o seu negócio a ser encontrado, entendido e <span class="orange">chamado no WhatsApp.</span></h1>
+        <p>Criamos sites, páginas para divulgar serviços e promoções, cardápios e catálogos on-line, artes e deixamos as informações da sua empresa certas no Google.</p>
       </div>
 
       <div class="devices">
         <div class="laptop">
-          <img src="{{img}}/autotech-desktop.webp" alt="Projeto-conceito AutoTech em um notebook" />
+          <img src="{{img}}/autotech-desktop.webp" alt="Exemplo fictício AutoTech em um notebook" />
         </div>
         <div class="laptop-base"></div>
         <div class="phone">
@@ -465,21 +527,21 @@
 
       <ul class="benefits">
         <li>
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-          Apresentação profissional
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+          Fácil de encontrar
         </li>
         <li>
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
-          Mais facilidade para o cliente encontrar informações
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>
+          Fácil de entender o que você oferece
         </li>
         <li>
           <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.6-5.2A8.5 8.5 0 1 1 21 11.5z"/></svg>
-          Contato simples e direto
+          Contato direto pelo WhatsApp
         </li>
       </ul>
 
       <div class="footer">
-        <span>Conheça nossas soluções digitais <span class="orange">→</span></span>
+        <span>Veja o que podemos criar <span class="orange">→</span></span>
         <a href="{{siteUrl}}">{{siteLabel}}</a>
       </div>
     </section>
@@ -492,42 +554,47 @@
       </div>
 
       <div class="p2-head">
-        <p class="eyebrow">Nossos serviços</p>
-        <h2>O que podemos fazer pelo seu negócio</h2>
+        <p class="eyebrow">Serviços</p>
+        <h2>O que podemos criar para a sua empresa</h2>
       </div>
 
       <ul class="services">
-        <li class="service">
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-          <h3><span>01</span>Criação de sites</h3>
-          <p>Sites institucionais, comerciais e landing pages.</p>
+        <li class="service is-focus">
+          <div class="service-top"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg><span class="focus-tag">Nosso foco</span></div>
+          <h3><span>01</span>Site para a sua empresa</h3>
+          <p>Tudo o que o cliente quer saber: o que você faz, onde fica, horários, fotos e contato.</p>
+        </li>
+        <li class="service is-focus">
+          <div class="service-top"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M9 7h6M9 11h6M9 15h3"/></svg><span class="focus-tag">Nosso foco</span></div>
+          <h3><span>02</span>Página para divulgar um serviço ou promoção</h3>
+          <p>Uma página direta para um serviço, oferta ou evento, com botão para o WhatsApp.</p>
         </li>
         <li class="service">
           <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 7h12l1 13H5z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
-          <h3><span>02</span>Vitrines digitais</h3>
-          <p>Cardápios, catálogos de produtos e serviços.</p>
+          <h3><span>03</span>Cardápio ou catálogo on-line</h3>
+          <p>Produtos ou serviços em um link que abre bem no celular, com botão para pedir.</p>
         </li>
         <li class="service">
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11v2a1 1 0 0 0 1 1h2l5 4V6L6 10H4a1 1 0 0 0-1 1z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg>
-          <h3><span>03</span>Materiais de marketing</h3>
-          <p>Artes promocionais, campanhas e peças para redes sociais.</p>
-        </li>
-        <li class="service">
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5a7 7 0 0 0-14 0C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
-          <h3><span>04</span>Presença digital</h3>
-          <p>Perfil da Empresa no Google, publicação de sites e atualização de informações digitais.</p>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/></svg>
+          <h3><span>04</span>Artes para divulgação</h3>
+          <p>Artes para Instagram e WhatsApp, e arte pronta para imprimir, se precisar.</p>
         </li>
       </ul>
 
-      <p class="closing">A solução certa depende do momento e da necessidade do seu negócio.</p>
+      <div class="service-wide">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5a7 7 0 0 0-14 0C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        <div>
+          <h3><span>05</span> Sua empresa certa no Google</h3>
+          <p>Endereço, horário, telefone e fotos certos quando alguém pesquisa a sua empresa.</p>
+        </div>
+      </div>
 
       <div class="footer">
-        <span>Veja os projetos na próxima página <span class="orange">→</span></span>
-        <a href="{{siteUrl}}">{{siteLabel}}</a>
+        <span>Orçamento gratuito · contrate um serviço ou combine vários</span>
       </div>
     </section>
 
-    <!-- ================= Página 3 — Projetos e contato ================= -->
+    <!-- ================= Página 3 — Exemplos e contato ================= -->
     <section class="page">
       <div class="top">
         <span class="logo"><span class="logo-jc">JC</span><span class="logo-word">Marketing</span></span>
@@ -535,51 +602,52 @@
       </div>
 
       <div class="p3-head">
-        <p class="eyebrow">Portfólio</p>
-        <h2>Veja o que podemos criar</h2>
-        <p class="concept-note">Projetos-conceito: demonstrações fictícias de soluções digitais.</p>
+        <p class="eyebrow">Exemplos</p>
+        <h2>Exemplos do que podemos criar</h2>
+        <p class="concept-note">Exemplos fictícios: não são clientes reais.</p>
       </div>
 
       <ul class="projects">
         <li class="project">
-          <img src="{{img}}/burger-house-desktop.webp" alt="Tela do projeto-conceito Burger House" />
-          <div><h3>Burger House</h3><p>Gastronomia</p></div>
+          <img src="{{img}}/burger-house-desktop.webp" alt="Tela do exemplo fictício Burger House" />
+          <div><h3>Burger House</h3><p>Exemplo para restaurante</p></div>
         </li>
         <li class="project">
-          <img src="{{img}}/autotech-desktop.webp" alt="Tela do projeto-conceito AutoTech" />
-          <div><h3>AutoTech</h3><p>Serviços automotivos</p></div>
+          <img src="{{img}}/autotech-desktop.webp" alt="Tela do exemplo fictício AutoTech" />
+          <div><h3>AutoTech</h3><p>Exemplo para oficina</p></div>
         </li>
         <li class="project">
-          <img src="{{img}}/studio-belle-desktop.webp" alt="Tela do projeto-conceito Studio Belle" />
-          <div><h3>Studio Belle</h3><p>Beleza e estética</p></div>
+          <img src="{{img}}/studio-belle-desktop.webp" alt="Tela do exemplo fictício Studio Belle" />
+          <div><h3>Studio Belle</h3><p>Exemplo para salão de beleza</p></div>
         </li>
       </ul>
 
       <div class="contact">
         <h2>Vamos conversar sobre o seu negócio?</h2>
+        <p class="contact-sub"><strong>Orçamento gratuito.</strong> Atendimento direto com os sócios Juliana Moreira e Paul Lugo, em São Manuel, Botucatu e região.</p>
         <ul class="channels">
           <li>
             <a href="{{whatsappUrl}}">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.6-5.2A8.5 8.5 0 1 1 21 11.5z"/></svg>
+              <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.6-5.2A8.5 8.5 0 1 1 21 11.5z"/></svg>
               <span><small>WhatsApp</small>{{phone}}</span>
             </a>
           </li>
           <li>
             <a href="mailto:{{email}}">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+              <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
               <span><small>E-mail</small>{{email}}</span>
             </a>
           </li>
           <li>
             <a href="{{siteUrl}}">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
-              <span><small>Portfólio</small>{{siteLabel}}</span>
+              <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+              <span><small>Site</small>{{siteLabel}}</span>
             </a>
           </li>
         </ul>
         <a class="cta" href="{{whatsappUrl}}">
-          Chamar no WhatsApp
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          Pedir orçamento no WhatsApp
+          <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
       </div>
 
@@ -588,6 +656,7 @@
         <a href="{{siteUrl}}">{{siteUrl}}</a>
       </div>
     </section>
+
     <script>
       // Usado por scripts/build-mini-portfolio.mjs para detectar conteúdo cortado.
       document.fonts.ready.then(() => {

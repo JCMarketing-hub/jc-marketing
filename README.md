@@ -1,6 +1,6 @@
 # Site JC Marketing
 
-Site institucional da JC Marketing, com três projetos-conceito fictícios (Burger House, AutoTech e Studio Belle). É um site estático feito com [Vite](https://vite.dev), sem framework de interface, e pronto para o GitHub Pages.
+Site institucional da JC Marketing, com três exemplos fictícios (Burger House, AutoTech e Studio Belle). É um site estático feito com [Vite](https://vite.dev), sem framework de interface, e pronto para o GitHub Pages.
 
 ## Requisitos
 
@@ -14,7 +14,7 @@ npm install        # instala as dependências
 npm run dev        # servidor de desenvolvimento em http://localhost:5173
 npm run build      # gera o site estático em dist/
 npm run preview    # serve o dist/ localmente
-npm run check      # verifica links, âncoras, SEO básico e avisos de projeto-conceito em dist/
+npm run check      # verifica links, âncoras, SEO básico e avisos de exemplo fictício em dist/
 npm test           # build + check
 npm run images -- <pasta> [destino] [larguras]   # converte fotos para WebP responsivo
 npm run screens -- [url]                         # recaptura as telas das demos (requer o preview rodando)
@@ -25,15 +25,15 @@ npm run screens -- [url]                         # recaptura as telas das demos 
 ```
 index.html                     Página principal
 404.html                       Página de erro (GitHub Pages)
-projetos/burger-house/         Projeto-conceito: restaurante (cardápio e pedido demonstrativo)
-projetos/autotech/             Projeto-conceito: oficina (serviços e orçamento demonstrativo)
-projetos/studio-belle/         Projeto-conceito: beleza (serviços e agendamento demonstrativo)
+projetos/burger-house/         Exemplo fictício: restaurante (cardápio e pedido demonstrativo)
+projetos/autotech/             Exemplo fictício: oficina (serviços e orçamento demonstrativo)
+projetos/studio-belle/         Exemplo fictício: salão de beleza (serviços e agendamento demonstrativo)
 site.config.js                 Dados comerciais (fonte única)
 vite.config.js                 Build multipágina, includes e SEO (canonical, sitemap, robots)
 src/partials/                  Trechos HTML compartilhados (cabeçalho, rodapé, avisos)
 src/styles/base.css            Tokens da identidade visual, botões e formulários
 src/styles/home.css            Estilos da página principal
-src/styles/demos.css           Estilos e temas dos projetos-conceito
+src/styles/demos.css           Estilos e temas dos exemplos
 src/scripts/                   Menu, formulários e pedido demonstrativo
 scripts/check-links.mjs        Verificação automática do build
 scripts/optimize-images.mjs    Conversão de fotos para WebP (sharp)
@@ -84,7 +84,7 @@ Enquanto nenhum canal estiver preenchido:
 
 O formulário **não envia dados a nenhum servidor**. Com WhatsApp configurado, ele abre o WhatsApp com a mensagem pronta. Com apenas o e-mail, abre o aplicativo de e-mail.
 
-## Projetos-conceito
+## Exemplos fictícios
 
 Burger House, AutoTech e Studio Belle são **fictícios**:
 
@@ -94,7 +94,7 @@ Burger House, AutoTech e Studio Belle são **fictícios**:
 
 ## Imagens e créditos
 
-As fotos dos projetos-conceito são do [Unsplash](https://unsplash.com) e usadas sob a [Licença Unsplash](https://unsplash.com/license). O crédito aparece no fim de cada página.
+As fotos dos exemplos fictícios são do [Unsplash](https://unsplash.com) e usadas sob a [Licença Unsplash](https://unsplash.com/license). O crédito aparece no fim de cada página.
 
 | Arquivo | Foto | Autor |
 |---|---|---|
@@ -102,7 +102,7 @@ As fotos dos projetos-conceito são do [Unsplash](https://unsplash.com) e usadas
 | `burger-house-hamburguer-*.webp` | [Hambúrguer com batatas fritas](https://unsplash.com/photos/5qBwgjP1ZwE) | Shaafi Ali |
 | `studio-belle-salao-*.webp` | [Cadeiras de salão](https://unsplash.com/photos/PtOfbGkU3uI) | Guilherme Petri |
 
-As imagens em `src/assets/img/telas/` são capturas das próprias páginas-conceito, usadas nos mockups e no portfólio da home. Depois de alterar uma demo, recapture-as:
+As imagens em `src/assets/img/telas/` são capturas das próprias páginas de exemplo, usadas nos mockups e no portfólio da home. Depois de alterar uma demo, recapture-as:
 
 ```bash
 npm run build

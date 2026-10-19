@@ -128,7 +128,7 @@ for (const [i, page] of pages.entries()) {
 
 pdf.setTitle(`${site.name} — Mini portfólio`);
 pdf.setAuthor(site.name);
-pdf.setSubject('Sites, vitrines digitais, marketing e presença digital.');
+pdf.setSubject('Sites, páginas de divulgação, cardápios on-line, artes e informações no Google.');
 pdf.setLanguage('pt-BR');
 pdf.setCreator(site.name);
 pdf.setProducer(site.name);

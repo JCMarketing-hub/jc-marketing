@@ -1,6 +1,6 @@
 /**
  * Verificação do build em dist/: links e recursos internos, âncoras, SEO
- * básico e aviso de projeto-conceito nas páginas demonstrativas.
+ * básico e aviso de exemplo fictício nas páginas de exemplo.
  * Uso: npm run build && npm run check (use o mesmo BASE_PATH nos dois).
  */
 import { readFileSync, readdirSync, existsSync, statSync } from 'node:fs';
@@ -28,8 +28,8 @@ for (const [pagePath, html] of pages) {
   if (/\{\{\w+\}\}|<!--\s*@(include|seo|contacts|social|whatsapp-float)/.test(html)) {
     errors.push(`${label}: marcador de template não processado.`);
   }
-  if (pagePath.includes('/projetos/') && !/Projeto-conceito fictício/.test(html)) {
-    errors.push(`${label}: falta o aviso de projeto-conceito fictício.`);
+  if (pagePath.includes('/projetos/') && !/Exemplo fictício/.test(html)) {
+    errors.push(`${label}: falta o aviso de exemplo fictício.`);
   }
   for (const m of html.matchAll(/<img\b[^>]*>/g)) {
     if (!/\balt=/.test(m[0])) errors.push(`${label}: imagem sem alt: ${m[0]}`);

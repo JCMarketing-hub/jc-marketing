@@ -5,6 +5,18 @@ import { validateForm, showStatus } from './form-utils.js';
 initNav();
 initHeaderScroll();
 initContactForm();
+initServiceLinks();
+
+/** Botões dos serviços já selecionam o serviço correspondente no formulário. */
+function initServiceLinks() {
+  const select = document.querySelector('#cf-servico');
+  if (!select) return;
+  document.querySelectorAll('[data-servico]').forEach((link) => {
+    link.addEventListener('click', () => {
+      select.value = link.dataset.servico;
+    });
+  });
+}
 
 /**
  * O formulário não envia dados para servidor algum: ele monta a mensagem e abre

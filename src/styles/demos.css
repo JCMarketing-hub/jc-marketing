@@ -560,3 +560,89 @@
     var(--bg);
 }
 
+
+/* ==========================================================================
+   Hero com fotografia
+   ========================================================================== */
+.demo-hero.has-photo {
+  position: relative;
+  display: grid;
+  align-items: center;
+  min-height: clamp(520px, 72vh, 680px);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.demo-hero-media {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.demo-hero-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: var(--photo-position, center);
+}
+
+/* Gradiente garante a leitura do texto sobre a foto. */
+.demo-hero-media::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    var(--bg) 0%,
+    color-mix(in srgb, var(--bg) 88%, transparent) 38%,
+    color-mix(in srgb, var(--bg) 20%, transparent) 72%,
+    transparent 100%
+  );
+}
+
+.demo-hero.has-photo .container {
+  max-width: calc(var(--container) + var(--gutter) * 2);
+}
+
+.demo-hero.has-photo .container > * {
+  max-width: 560px;
+}
+
+.theme-autotech {
+  --photo-position: 70% center;
+}
+
+.theme-burger {
+  --photo-position: 65% 60%;
+}
+
+.theme-belle {
+  --photo-position: 75% center;
+}
+
+@media (max-width: 760px) {
+  .demo-hero.has-photo {
+    align-items: end;
+    min-height: auto;
+    padding-top: 260px;
+  }
+
+  .demo-hero-media {
+    bottom: auto;
+    height: 420px;
+  }
+
+  .demo-hero-media::after {
+    background: linear-gradient(180deg, transparent 0%, color-mix(in srgb, var(--bg) 40%, transparent) 50%, var(--bg) 100%);
+  }
+}
+
+.photo-credit {
+  padding-block: 20px;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+.photo-credit a {
+  color: inherit;
+}

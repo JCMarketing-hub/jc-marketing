@@ -68,14 +68,28 @@ function contactLinks() {
   return `<ul class="contact-list" role="list">${items.join('')}</ul>`;
 }
 
+const socialIcons = {
+  instagram: {
+    label: 'Instagram',
+    path: '<rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/>',
+  },
+  linkedin: {
+    label: 'LinkedIn',
+    path: '<rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v6M8 7.5v.01M12 16v-3.5a2 2 0 0 1 4 0V16M12 10v6"/>',
+  },
+  facebook: {
+    label: 'Facebook',
+    path: '<path d="M14 8h2.5V4.5H14A3.5 3.5 0 0 0 10.5 8v2.5H8V14h2.5v6.5H14V14h2.5l.5-3.5h-3V8.5A.5.5 0 0 1 14 8z"/>',
+  },
+};
+
 function socialLinks() {
-  const labels = { instagram: 'Instagram', linkedin: 'LinkedIn', facebook: 'Facebook' };
   const items = Object.entries(site.social)
-    .filter(([, url]) => url)
-    .map(
-      ([key, url]) =>
-        `<li><a href="${escapeHtml(url)}" target="_blank" rel="noopener">${labels[key] ?? key}</a></li>`,
-    );
+    .filter(([key, url]) => url && socialIcons[key])
+    .map(([key, url]) => {
+      const { label, path } = socialIcons[key];
+      return `<li><a class="social-link" href="${escapeHtml(url)}" target="_blank" rel="noopener" aria-label="${label} da ${escapeHtml(site.name)}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${path}</svg></a></li>`;
+    });
   return items.length ? `<ul class="footer-social" role="list">${items.join('')}</ul>` : '';
 }
 

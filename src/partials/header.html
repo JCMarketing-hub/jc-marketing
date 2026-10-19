@@ -3,7 +3,6 @@
       <div class="container header-inner">
         <a class="brand" href="{{base}}" aria-label="{{name}} — página inicial">
           <!-- @include logo -->
-          <span class="brand-name">JC <span>Marketing</span></span>
         </a>
         <button
           class="nav-toggle"
@@ -17,13 +16,16 @@
         </button>
         <nav class="site-nav" id="menu-principal" aria-label="Navegação principal" data-nav>
           <ul role="list">
+            <li><a href="{{base}}#inicio">Início</a></li>
             <li><a href="{{base}}#servicos">Serviços</a></li>
             <li><a href="{{base}}#portfolio">Portfólio</a></li>
-            <li><a href="{{base}}#processo">Processo</a></li>
-            <li><a href="{{base}}#agencia">A agência</a></li>
-            <li><a href="{{base}}#faq">Dúvidas</a></li>
+            <li><a href="{{base}}#processo">Como funciona</a></li>
+            <li><a href="{{base}}#contato">Contato</a></li>
           </ul>
-          <a class="btn btn-primary nav-cta" href="{{base}}#contato">Fale com a gente</a>
+          <a class="btn btn-primary nav-cta" href="{{base}}#contato">
+            Solicitar orçamento
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
         </nav>
       </div>
     </header>

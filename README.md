@@ -16,6 +16,8 @@ npm run build      # gera o site estático em dist/
 npm run preview    # serve o dist/ localmente
 npm run check      # verifica links, âncoras, SEO básico e avisos de projeto-conceito em dist/
 npm test           # build + check
+npm run images -- <pasta> [destino] [larguras]   # converte fotos para WebP responsivo
+npm run screens -- [url]                         # recaptura as telas das demos (requer o preview rodando)
 ```
 
 ## Estrutura
@@ -34,6 +36,9 @@ src/styles/home.css            Estilos da página principal
 src/styles/demos.css           Estilos e temas dos projetos-conceito
 src/scripts/                   Menu, formulários e pedido demonstrativo
 scripts/check-links.mjs        Verificação automática do build
+scripts/optimize-images.mjs    Conversão de fotos para WebP (sharp)
+scripts/capture-screens.mjs    Captura das telas das demos para os mockups da home
+src/assets/img/                Fotos otimizadas e telas das demos (telas/)
 public/                        Arquivos copiados sem processamento (favicon)
 .github/workflows/deploy.yml   Publicação no GitHub Pages
 ```
@@ -87,6 +92,25 @@ Burger House, AutoTech e Studio Belle são **fictícios**:
 - não há preços, depoimentos ou resultados;
 - pedido, orçamento e agendamento são demonstrativos e informam que nada foi enviado.
 
+## Imagens e créditos
+
+As fotos dos projetos-conceito são do [Unsplash](https://unsplash.com) e usadas sob a [Licença Unsplash](https://unsplash.com/license). O crédito aparece no fim de cada página.
+
+| Arquivo | Foto | Autor |
+|---|---|---|
+| `autotech-carro-*.webp` | [Carro esportivo em quarto escuro](https://unsplash.com/photos/0xySZZ8OK1o) | Tuna Ekici |
+| `burger-house-hamburguer-*.webp` | [Hambúrguer com batatas fritas](https://unsplash.com/photos/5qBwgjP1ZwE) | Shaafi Ali |
+| `studio-belle-salao-*.webp` | [Cadeiras de salão](https://unsplash.com/photos/PtOfbGkU3uI) | Guilherme Petri |
+
+As imagens em `src/assets/img/telas/` são capturas das próprias páginas-conceito, usadas nos mockups e no portfólio da home. Depois de alterar uma demo, recapture-as:
+
+```bash
+npm run build
+npm run preview          # em outro terminal
+npm run screens
+npm run build
+```
+
 ## Publicação no GitHub Pages
 
 1. Crie o repositório no GitHub e envie o código para a branch `main`.
@@ -113,4 +137,4 @@ No Git Bash do Windows, rode antes `export MSYS_NO_PATHCONV=1 MSYS2_ENV_CONV_EXC
 
 - Contatos preenchidos em `site.config.js`: WhatsApp, e-mail, telefone e Instagram. Região, LinkedIn e Facebook ficam ocultos por escolha.
 - Adicionar uma imagem de compartilhamento (`og:image`, PNG 1200×630) quando houver arte oficial.
-- Inserir o logotipo oficial, se for diferente do monograma em `src/partials/logo.html` e `public/favicon.svg`.
+- O logotipo é tipográfico (`src/partials/logo.html` + estilos em `src/styles/base.css`) e o favicon fica em `public/favicon.svg`. Se houver um arquivo oficial do logo, substitua os dois.

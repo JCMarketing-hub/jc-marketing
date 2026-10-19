@@ -5,10 +5,10 @@
     <title>JC Marketing | Sites, vitrines digitais e marketing digital</title>
     <meta
       name="description"
-      content="A JC Marketing cria sites, vitrines digitais e estratégias de marketing para empresas que querem uma presença digital profissional, rápida e fácil de encontrar."
+      content="A JC Marketing cria sites, páginas comerciais e soluções digitais para ajudar negócios a apresentar seus serviços e facilitar o contato com seus clientes."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="JC Marketing | Presença digital à altura da sua empresa" />
+    <meta property="og:title" content="JC Marketing | Sua empresa merece uma presença digital à altura" />
     <meta
       property="og:description"
       content="Criação de sites, vitrines digitais, marketing digital e gestão da presença online."
@@ -21,6 +21,7 @@
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
         "name": "JC Marketing",
+        "slogan": "Sua presença digital, elevada.",
         "description": "Agência de presença digital: criação de sites, vitrines digitais, marketing digital e gestão da presença online.",
         "knowsAbout": ["Criação de sites", "Vitrines digitais", "Marketing digital", "Gestão de presença digital"]
       }
@@ -31,44 +32,62 @@
 
     <main id="conteudo">
       <!-- Hero -->
-      <section class="hero" aria-labelledby="hero-title">
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-glow" aria-hidden="true"></div>
         <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">Agência de presença digital</p>
-            <h1 id="hero-title">Sua empresa merece uma presença digital à altura.</h1>
+            <p class="eyebrow eyebrow-dots">Estratégia <span aria-hidden="true">•</span> Design <span aria-hidden="true">•</span> Presença digital</p>
+            <h1 id="hero-title">Sua empresa merece uma presença digital <span class="highlight">à altura.</span></h1>
             <p class="hero-lead">
-              Criamos sites, vitrines digitais e estratégias de marketing que mostram o valor do seu
-              negócio, facilitam o contato e transformam visitantes em clientes.
+              Criamos sites, páginas comerciais e soluções digitais para ajudar negócios a apresentar
+              seus serviços e facilitar o contato com seus clientes.
             </p>
             <div class="hero-actions">
               <a class="btn btn-primary" href="#contato">
                 Solicitar orçamento
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
               </a>
-              <a class="btn btn-secondary" href="#portfolio">Ver portfólio</a>
+              <a class="btn btn-outline" href="#portfolio">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 8.5l5 3.5-5 3.5z"/></svg>
+                Conhecer projetos
+              </a>
             </div>
-            <ul class="hero-points" role="list">
-              <li>Sites rápidos e responsivos</li>
-              <li>Foco em contato e conversão</li>
-              <li>SEO e acessibilidade desde o início</li>
-            </ul>
           </div>
 
-          <div class="hero-visual" aria-hidden="true">
-            <div class="mock-window">
-              <div class="mock-bar"><span></span><span></span><span></span><i>suaempresa.com.br</i></div>
-              <div class="mock-body">
-                <div class="mock-nav"><b></b><span></span><span></span><span></span><em></em></div>
-                <div class="mock-hero">
-                  <div class="mock-lines"><b></b><b></b><span></span><span></span><em></em></div>
-                  <div class="mock-image"></div>
-                </div>
-                <div class="mock-cards"><div></div><div></div><div></div></div>
+          <div class="hero-visual">
+            <div class="device-laptop">
+              <div class="laptop-screen">
+                <img
+                  src="/src/assets/img/telas/autotech-desktop.webp"
+                  width="1200"
+                  height="750"
+                  alt="Projeto-conceito AutoTech exibido em um notebook"
+                  fetchpriority="high"
+                />
               </div>
+              <div class="laptop-base" aria-hidden="true"></div>
             </div>
-            <div class="mock-chip chip-a"><span class="dot"></span>Responsivo</div>
-            <div class="mock-chip chip-b"><span class="dot dot-orange"></span>Botão de WhatsApp</div>
+            <div class="device-phone" aria-hidden="true">
+              <img src="/src/assets/img/telas/autotech-mobile.webp" width="520" height="1123" alt="" />
+            </div>
           </div>
+        </div>
+
+        <div class="container">
+          <ul class="hero-features" role="list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="15" height="11" rx="1.5"/><rect x="15" y="9" width="7" height="11" rx="1.5"/><path d="M6 19h7"/></svg>
+              Sites responsivos
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.6-5.2A8.5 8.5 0 1 1 21 11.5z"/><path d="M9 10.5c.5 2 2 3.5 4 4l1.2-1.2 2 1-.5 1.7c-3.5.2-7.5-3.8-7.3-7.3l1.7-.5 1 2z"/></svg>
+              Foco no contato
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l4-1 11-11-3-3L5 16z"/><path d="M14 7l3 3"/></svg>
+              Projetos personalizados
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -76,123 +95,156 @@
       <section class="section" id="servicos" aria-labelledby="servicos-title">
         <div class="container">
           <header class="section-head">
-            <p class="eyebrow">Serviços</p>
-            <h2 id="servicos-title">Tudo o que sua empresa precisa para crescer no digital</h2>
-            <p>Soluções que se complementam: você pode começar por uma delas e evoluir no seu ritmo.</p>
+            <p class="eyebrow">Nossos serviços</p>
+            <h2 id="servicos-title">Soluções digitais completas para o seu negócio.</h2>
+            <p>Escolha a solução ideal para o seu momento e conte com um processo simples, transparente e focado em resultado.</p>
           </header>
 
-          <ol class="services" role="list">
-            <li class="service-card">
-              <span class="service-number">01</span>
-              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 21h8M12 18v3"/></svg>
-              <h3>Criação de sites</h3>
-              <p>Sites institucionais e landing pages com design profissional, carregamento rápido, versão mobile impecável e estrutura pensada para gerar contatos.</p>
-              <ul class="service-list" role="list">
-                <li>Sites institucionais e landing pages</li>
-                <li>Layout responsivo e acessível</li>
-                <li>SEO técnico básico incluso</li>
-              </ul>
-            </li>
-            <li class="service-card">
-              <span class="service-number">02</span>
-              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9l1.5-5h13L20 9"/><path d="M4 9h16v2a3 3 0 0 1-5.3 2 3 3 0 0 1-5.4 0A3 3 0 0 1 4 11V9z"/><path d="M5 13v7h14v-7M10 20v-4h4v4"/></svg>
-              <h3>Vitrines digitais</h3>
-              <p>Catálogos, cardápios e páginas de serviços que apresentam o que você oferece de forma clara e levam o cliente direto ao pedido, orçamento ou agendamento.</p>
-              <ul class="service-list" role="list">
-                <li>Cardápios e catálogos on-line</li>
-                <li>Páginas de serviços com orçamento</li>
-                <li>Integração com WhatsApp</li>
-              </ul>
-            </li>
-            <li class="service-card">
-              <span class="service-number">03</span>
-              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11v2a1 1 0 0 0 1 1h2l5 4V6L6 10H4a1 1 0 0 0-1 1z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg>
-              <h3>Marketing digital</h3>
-              <p>Estratégia e conteúdo para atrair o público certo: planejamento, campanhas e comunicação alinhada à identidade da sua marca.</p>
-              <ul class="service-list" role="list">
-                <li>Planejamento de conteúdo</li>
-                <li>Campanhas para redes e buscadores</li>
-                <li>Copy orientada à conversão</li>
-              </ul>
-            </li>
-            <li class="service-card">
-              <span class="service-number">04</span>
-              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
-              <h3>Presença e gestão digital</h3>
-              <p>Organização e manutenção da sua presença on-line para que clientes encontrem informações corretas e atualizadas em todos os canais.</p>
-              <ul class="service-list" role="list">
-                <li>Perfil da empresa no Google</li>
-                <li>Organização de redes sociais</li>
-                <li>Atualização e manutenção do site</li>
-              </ul>
-            </li>
-          </ol>
+          <div class="services-layout">
+            <ol class="services" role="list">
+              <li class="service-card">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                <h3><span class="service-number">01.</span> Criação de sites</h3>
+                <ul class="service-list" role="list">
+                  <li>Sites institucionais</li>
+                  <li>Sites comerciais</li>
+                  <li>Landing pages</li>
+                  <li>Páginas de apresentação</li>
+                </ul>
+                <a class="btn btn-primary btn-sm" href="#contato" data-servico="Criação de sites">
+                  Quero criar meu site
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </a>
+              </li>
+              <li class="service-card">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 7h12l1 13H5z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+                <h3><span class="service-number">02.</span> Vitrines digitais</h3>
+                <ul class="service-list" role="list">
+                  <li>Cardápios digitais</li>
+                  <li>Catálogos de produtos</li>
+                  <li>Catálogos de serviços</li>
+                  <li>Pedidos e orçamentos</li>
+                </ul>
+                <a class="btn btn-primary btn-sm" href="#contato" data-servico="Vitrines digitais">
+                  Quero uma vitrine digital
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </a>
+              </li>
+              <li class="service-card">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11v2a1 1 0 0 0 1 1h2l5 4V6L6 10H4a1 1 0 0 0-1 1z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg>
+                <h3><span class="service-number">03.</span> Marketing digital</h3>
+                <ul class="service-list" role="list">
+                  <li>Artes promocionais</li>
+                  <li>Campanhas comerciais</li>
+                  <li>Peças para redes sociais</li>
+                  <li>Páginas de divulgação</li>
+                </ul>
+                <a class="btn btn-primary btn-sm" href="#contato" data-servico="Marketing digital">
+                  Quero divulgar meu negócio
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </a>
+              </li>
+              <li class="service-card">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5a7 7 0 0 0-14 0C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+                <h3><span class="service-number">04.</span> Presença e gestão digital</h3>
+                <ul class="service-list" role="list">
+                  <li>Perfil da Empresa no Google</li>
+                  <li>Informações comerciais</li>
+                  <li>Atualização de sites</li>
+                  <li>Domínio e publicação</li>
+                </ul>
+                <a class="btn btn-primary btn-sm" href="#contato" data-servico="Presença e gestão digital">
+                  Quero melhorar minha presença
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </a>
+              </li>
+            </ol>
+
+            <aside class="visibility-card" aria-labelledby="visibilidade-title">
+              <div class="mini-phone" aria-hidden="true">
+                <div class="mini-search">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/></svg>
+                  Perfil da Empresa
+                </div>
+                <svg class="mini-map" viewBox="0 0 200 120" preserveAspectRatio="xMidYMid slice">
+                  <rect width="200" height="120" fill="#221c33"/>
+                  <path d="M0 40h200M0 88h200M52 0v120M128 0v120M0 118L200 8" stroke="#3a3150" stroke-width="7"/>
+                  <path d="M0 64h200M92 0v120" stroke="#2d2641" stroke-width="3"/>
+                  <path d="M100 30c-9 0-15 7-15 15 0 11 15 25 15 25s15-14 15-25c0-8-6-15-15-15z" fill="#7C3AED"/>
+                  <circle cx="100" cy="45" r="5.5" fill="#F8F7FC"/>
+                </svg>
+                <div class="mini-info">
+                  <b></b>
+                  <span></span>
+                  <span class="short"></span>
+                  <div class="mini-chips"><i>Rota</i><i>Ligar</i><i>Site</i></div>
+                </div>
+              </div>
+              <h3 id="visibilidade-title">Mais visibilidade para o seu negócio no Google.</h3>
+              <p>Apareça para quem já está procurando por você.</p>
+              <a class="round-cta" href="#contato" data-servico="Presença e gestão digital" aria-label="Quero mais visibilidade no Google">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </aside>
+          </div>
         </div>
       </section>
 
       <!-- Portfólio -->
       <section class="section section-alt" id="portfolio" aria-labelledby="portfolio-title">
-        <div class="container">
+        <div class="container portfolio-layout">
           <header class="section-head">
             <p class="eyebrow">Portfólio</p>
-            <h2 id="portfolio-title">Projetos-conceito que mostram o que podemos fazer</h2>
+            <h2 id="portfolio-title">Projetos-conceito que mostram o que podemos criar para o seu negócio.</h2>
             <p>
-              Os projetos abaixo são <strong>fictícios</strong>, criados pela JC Marketing para demonstrar
-              soluções para diferentes segmentos. Não representam empresas ou clientes reais.
+              Conheça demonstrações desenvolvidas para diferentes segmentos e veja possibilidades de
+              apresentação digital para sua empresa. São projetos <strong>fictícios</strong>, que não
+              representam clientes reais.
             </p>
           </header>
 
           <ul class="portfolio" role="list">
             <li class="project-card">
-              <div class="project-preview preview-burger" aria-hidden="true">
-                <div class="pv-nav"><b></b><span></span><span></span></div>
-                <div class="pv-title"></div>
-                <div class="pv-sub"></div>
-                <div class="pv-items"><div></div><div></div><div></div></div>
+              <div class="project-image">
+                <img src="/src/assets/img/telas/burger-house-desktop.webp" width="900" height="563" alt="Tela inicial do projeto-conceito Burger House" loading="lazy" />
+                <span class="badge">Projeto-conceito</span>
               </div>
               <div class="project-body">
-                <span class="badge">Projeto-conceito fictício</span>
-                <p class="project-segment">Restaurante · Hamburgueria</p>
                 <h3>Burger House</h3>
-                <p>Vitrine digital com cardápio organizado por categorias e montagem de pedido demonstrativa, pensada para o celular.</p>
+                <p class="project-segment">Gastronomia</p>
+                <p>Página para restaurante, com cardápio, diferenciais e montagem de pedido demonstrativa.</p>
                 <a class="project-link" href="{{base}}projetos/burger-house/">
-                  Ver projeto <span class="visually-hidden">Burger House</span>
+                  Ver demonstração <span class="visually-hidden">do Burger House</span>
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
                 </a>
               </div>
             </li>
             <li class="project-card">
-              <div class="project-preview preview-autotech" aria-hidden="true">
-                <div class="pv-nav"><b></b><span></span><span></span></div>
-                <div class="pv-title"></div>
-                <div class="pv-sub"></div>
-                <div class="pv-items"><div></div><div></div><div></div></div>
+              <div class="project-image">
+                <img src="/src/assets/img/telas/autotech-desktop.webp" width="1200" height="750" alt="Tela inicial do projeto-conceito AutoTech" loading="lazy" />
+                <span class="badge">Projeto-conceito</span>
               </div>
               <div class="project-body">
-                <span class="badge">Projeto-conceito fictício</span>
-                <p class="project-segment">Serviços automotivos</p>
                 <h3>AutoTech</h3>
-                <p>Site de apresentação para oficina mecânica com serviços detalhados, diferenciais e formulário de orçamento demonstrativo.</p>
+                <p class="project-segment">Serviços automotivos</p>
+                <p>Página para oficina, com serviços, apresentação da empresa e solicitação de orçamento.</p>
                 <a class="project-link" href="{{base}}projetos/autotech/">
-                  Ver projeto <span class="visually-hidden">AutoTech</span>
+                  Ver demonstração <span class="visually-hidden">da AutoTech</span>
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
                 </a>
               </div>
             </li>
             <li class="project-card">
-              <div class="project-preview preview-belle" aria-hidden="true">
-                <div class="pv-nav"><b></b><span></span><span></span></div>
-                <div class="pv-title"></div>
-                <div class="pv-sub"></div>
-                <div class="pv-items"><div></div><div></div><div></div></div>
+              <div class="project-image">
+                <img src="/src/assets/img/telas/studio-belle-desktop.webp" width="900" height="563" alt="Tela inicial do projeto-conceito Studio Belle" loading="lazy" />
+                <span class="badge">Projeto-conceito</span>
               </div>
               <div class="project-body">
-                <span class="badge">Projeto-conceito fictício</span>
-                <p class="project-segment">Beleza e estética</p>
                 <h3>Studio Belle</h3>
-                <p>Página elegante para estúdio de beleza com apresentação dos serviços e fluxo de agendamento demonstrativo.</p>
+                <p class="project-segment">Beleza e estética</p>
+                <p>Página para salão, com serviços, ambiente e agendamento demonstrativo.</p>
                 <a class="project-link" href="{{base}}projetos/studio-belle/">
-                  Ver projeto <span class="visually-hidden">Studio Belle</span>
+                  Ver demonstração <span class="visually-hidden">do Studio Belle</span>
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
                 </a>
               </div>
@@ -202,47 +254,47 @@
       </section>
 
       <!-- Benefícios -->
-      <section class="section" id="beneficios" aria-labelledby="beneficios-title">
-        <div class="container">
-          <header class="section-head">
-            <p class="eyebrow">Benefícios</p>
-            <h2 id="beneficios-title">O que muda quando sua presença digital é bem feita</h2>
-          </header>
-          <ul class="benefits" role="list">
+      <section class="why" id="beneficios" aria-labelledby="beneficios-title">
+        <div class="container why-grid">
+          <div class="why-head">
+            <h2 id="beneficios-title">Por que escolher a JC Marketing?</h2>
+            <p>Mais do que um site, entregamos uma solução digital completa para valorizar o seu negócio e facilitar o contato com seus clientes.</p>
+          </div>
+          <ul class="why-list" role="list">
             <li>
-              <h3>Mais credibilidade</h3>
-              <p>Um site profissional transmite confiança antes mesmo do primeiro contato.</p>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg>
+              <span><strong>Design responsivo</strong> em todos os dispositivos</span>
             </li>
             <li>
-              <h3>Contato sem atrito</h3>
-              <p>Botões claros para WhatsApp, orçamento ou agendamento, posicionados onde o cliente decide.</p>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5a7 7 0 0 0-14 0C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+              <span><strong>Informações</strong> bem organizadas</span>
             </li>
             <li>
-              <h3>Encontrado nas buscas</h3>
-              <p>Estrutura otimizada para buscadores e informações consistentes em todos os canais.</p>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.6-5.2A8.5 8.5 0 1 1 21 11.5z"/></svg>
+              <span><strong>Contato facilitado</strong> com WhatsApp e outros canais</span>
             </li>
             <li>
-              <h3>Perfeito no celular</h3>
-              <p>Layouts pensados primeiro para telas pequenas, onde a maioria das visitas acontece.</p>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              <span><strong>Apresentação</strong> profissional e moderna</span>
             </li>
             <li>
-              <h3>Rápido e acessível</h3>
-              <p>Páginas leves, legíveis e navegáveis por teclado e leitores de tela.</p>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18c1 0 1.5-.7 1.5-1.5 0-1.2-1-1.5-1-2.5s.8-1.5 2-1.5h2A4.5 4.5 0 0 0 21 11c0-4.4-4-8-9-8z"/><circle cx="7.5" cy="11" r="1"/><circle cx="10.5" cy="7.5" r="1"/><circle cx="15" cy="7.5" r="1"/></svg>
+              <span><strong>Personalização visual</strong> para a sua marca</span>
             </li>
             <li>
-              <h3>Fácil de evoluir</h3>
-              <p>Base organizada para atualizar conteúdos e adicionar novas páginas quando precisar.</p>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></svg>
+              <span><strong>Orientação</strong> durante todo o processo</span>
             </li>
           </ul>
         </div>
       </section>
 
       <!-- Processo -->
-      <section class="section section-alt" id="processo" aria-labelledby="processo-title">
+      <section class="section" id="processo" aria-labelledby="processo-title">
         <div class="container">
           <header class="section-head">
-            <p class="eyebrow">Processo de trabalho</p>
-            <h2 id="processo-title">Do primeiro contato ao site no ar, sem complicação</h2>
+            <p class="eyebrow">Como funciona</p>
+            <h2 id="processo-title">Do primeiro contato ao site no ar, sem complicação.</h2>
           </header>
           <ol class="steps" role="list">
             <li>
@@ -275,11 +327,11 @@
       </section>
 
       <!-- Agência -->
-      <section class="section" id="agencia" aria-labelledby="agencia-title">
+      <section class="section section-alt" id="agencia" aria-labelledby="agencia-title">
         <div class="container agency-grid">
           <div>
             <p class="eyebrow">A agência</p>
-            <h2 id="agencia-title">Tecnologia e estratégia a serviço do seu negócio</h2>
+            <h2 id="agencia-title">Tecnologia e estratégia a serviço do seu negócio.</h2>
           </div>
           <div class="agency-copy">
             <p>
@@ -301,7 +353,7 @@
       </section>
 
       <!-- FAQ -->
-      <section class="section section-alt" id="faq" aria-labelledby="faq-title">
+      <section class="section" id="faq" aria-labelledby="faq-title">
         <div class="container faq-grid">
           <header class="section-head">
             <p class="eyebrow">Perguntas frequentes</p>

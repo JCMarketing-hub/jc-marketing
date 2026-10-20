@@ -1,0 +1,26 @@
+NARKIA DIGITAL — REFERÊNCIA DA IDENTIDADE VISUAL
+
+Slogan:
+Tecnologia e criatividade para crescer.
+
+PALETA DE CORES
+Grafite: #171321 — fundo principal
+Branco suave: #F8F7FC — textos e elementos claros
+Roxo: #7C3AED — destaques e elementos tecnológicos
+Laranja: #FF6B1A — energia e detalhe do símbolo
+
+TIPOGRAFIA
+Principal: Montserrat Bold — títulos e destaques
+Apoio: Montserrat Regular — textos e conteúdos
+Alternativa para interfaces digitais: Inter
+
+ELEMENTOS GRÁFICOS
+- Triângulo laranja como detalhe de reconhecimento do símbolo.
+- Linhas horizontais roxa e laranja.
+- Formas angulares em roxo e laranja para sugerir movimento e tecnologia.
+- Preferir fundos grafite/escuros e alto contraste.
+- Manter respiro ao redor do logo e não distorcer proporções.
+- Evitar sombras fortes, efeitos 3D e cores fora da paleta.
+
+OBSERVAÇÃO
+Os arquivos PNG individuais são recortes da prancha de referência enviada, não redesenhos vetoriais independentes. Para uso profissional em qualquer tamanho, recomenda-se preparar/revisar versões vetoriais finais (SVG/PDF).

@@ -60,7 +60,7 @@ for (const [pagePath, html] of pages) {
   }
 }
 
-for (const required of ['robots.txt', '.nojekyll', 'favicon.svg', '404.html']) {
+for (const required of ['robots.txt', '.nojekyll', 'favicon.png', 'apple-touch-icon.png', 'og-image.jpg', '404.html']) {
   if (!existsSync(join(dist, required))) errors.push(`dist/${required} ausente.`);
 }
 

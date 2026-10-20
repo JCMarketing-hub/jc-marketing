@@ -37,7 +37,7 @@ function initContactForm() {
   if (!channel) {
     submit.disabled = true;
     note.textContent =
-      'O envio estará disponível assim que os canais de atendimento da JC Marketing forem configurados.';
+      `O envio estará disponível assim que os canais de atendimento da ${site.name} forem configurados.`;
     return;
   }
 

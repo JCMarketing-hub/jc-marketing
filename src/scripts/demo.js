@@ -23,7 +23,7 @@ function initDemoForms() {
       showStatus(
         status,
         'Demonstração: nenhuma solicitação foi enviada.',
-        form.dataset.demoMessage || 'Este é um exemplo fictício da JC Marketing.',
+        form.dataset.demoMessage || 'Este é um exemplo fictício da NARKIA DIGITAL.',
       );
     });
   });

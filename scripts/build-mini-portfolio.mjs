@@ -17,7 +17,7 @@ const EXPECTED_PAGES = 3;
 const sourceDir = resolve('materiais/mini-portfolio');
 const template = join(sourceDir, 'mini-portfolio.html');
 const rendered = join(sourceDir, '.render.html');
-const output = resolve('materiais/mini-portfolio-jc-marketing.pdf');
+const output = resolve('materiais/mini-portfolio-narkia-digital.pdf');
 
 const chrome =
   process.env.CHROME_PATH ||
@@ -48,6 +48,8 @@ const escape = (v) => String(v).replace(/&/g, '&amp;').replace(/</g, '&lt;').rep
 const message = `Olá, ${site.name}! Vi o mini portfólio e gostaria de conversar sobre o meu negócio.`;
 const values = {
   img: '.img',
+  logo: '../../src/assets/brand/narkia-logo.png',
+  name: site.name,
   siteUrl: site.url,
   siteLabel: site.url.replace(/^https?:\/\//, '').replace(/\/$/, ''),
   whatsappUrl: `https://wa.me/${whatsapp.replace(/\D/g, '')}?text=${encodeURIComponent(message)}`,

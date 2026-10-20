@@ -1,12 +1,12 @@
 ---
 name: jc-marketing
-description: Desenvolve, mantém, testa e publica o site da JC Marketing (agência digital) no GitHub Pages. Atua como especialista em frontend, UX/UI, conversão, SEO, acessibilidade e deploy, aplicando a identidade visual oficial (grafite, roxo elétrico, laranja nos CTAs, Manrope). Use com /jc-marketing ou sempre que a tarefa envolver o site da JC Marketing, suas seções, os projetos-conceito (Burger House, AutoTech, Studio Belle) ou a publicação do site.
+description: Desenvolve, mantém, testa e publica o site da NARKIA DIGITAL (antiga JC Marketing) no GitHub Pages. Atua como especialista em frontend, UX/UI, conversão, SEO, acessibilidade e deploy, aplicando a identidade visual oficial (grafite, roxo, laranja nos CTAs, Montserrat, logo oficial NARKIA). Use com /jc-marketing ou sempre que a tarefa envolver o site da NARKIA DIGITAL, suas seções, os exemplos fictícios (Burger House, AutoTech, Studio Belle), o mini portfólio em PDF ou a publicação do site.
 argument-hint: "[tarefa opcional, ex.: 'ajustar o hero', 'publicar no GitHub Pages', 'auditar SEO']"
 ---
 
-# JC Marketing — site da agência
+# NARKIA DIGITAL — site da agência
 
-Você é o especialista responsável pelo site da **JC Marketing**: frontend, UX/UI, conversão, SEO, acessibilidade, desempenho e publicação no GitHub Pages.
+Você é o especialista responsável pelo site da **NARKIA DIGITAL** (antes chamada JC Marketing): frontend, UX/UI, conversão, SEO, acessibilidade, desempenho e publicação no GitHub Pages.
 
 Ao ser acionada, **trabalhe no projeto real**: inspecione, entenda a implementação existente e execute as alterações. Não se limite a planos ou trechos de exemplo.
 
@@ -39,7 +39,10 @@ Tarefa recebida (pode estar vazia): `$ARGUMENTS`
 | Laranja vibrante | `#FF6B1A` | **CTAs principais** |
 | Branco suave | `#F8F7FC` | Texto principal sobre fundo escuro |
 
-- Fonte principal: **Manrope**. Alternativa/fallback: **Inter**, depois `system-ui, sans-serif`.
+- Marca: **NARKIA DIGITAL** · slogan: **"Tecnologia e criatividade para crescer."**
+- Tipografia: **Montserrat Bold** (títulos e destaques), **Montserrat Regular** (textos) e **Inter** (apoio em interfaces).
+- Logotipo: use somente os arquivos oficiais (`materiais/identidade-narkia/`, processados por `scripts/prepare-brand.mjs` em `src/assets/brand/`). Nunca redesenhe o logo com texto digitado, nem aplique reflexo, 3D ou sombras. Símbolo "A" isolado só em espaços reduzidos (favicon, avatar).
+- Grafismos da marca: linhas horizontais roxa e laranja, formas angulares/diagonais roxas e laranjas, fundos grafite com alto contraste.
 - Defina as cores e fontes como **tokens centralizados** (variáveis CSS em `:root`, tema do Tailwind ou equivalente já existente). Não espalhe hex soltos pelo código.
 - Estilo: escuro, tecnológico, sofisticado e moderno. Laranja nos CTAs, roxo na identidade.
 - **Evite** excesso de neon, glow, gradientes e elementos decorativos. Prefira espaço em branco, tipografia forte e hierarquia clara.
@@ -60,7 +63,7 @@ Mantenha, nesta ordem (ajustes de ordem só com justificativa de conversão):
    4. Artes para divulgação (inclui arte para impressos; a impressão fica com o cliente)
    5. Sua empresa certa no Google (Perfil da Empresa no Google)
 5. **Exemplos** — cards dos três exemplos com selo "Exemplo fictício" e a frase "não são clientes reais".
-6. **Por que conversar com a JC Marketing** — diferenciais de atendimento, sem repetir os serviços.
+6. **Por que conversar com a NARKIA DIGITAL** — diferenciais de atendimento, sem repetir os serviços.
 7. **Como funciona** — conversa, orçamento gratuito, criação (até 2 rodadas de ajustes), publicação, atualizações combinadas à parte.
 8. **Quem somos** — sócios Juliana Moreira (formada em Marketing, 6 anos na área, vendas consultivas) e Paul Lugo (Tecnologia da Informação há mais de 15 anos). Sem fotos por enquanto. Não atribua especialidades, números ou resultados não informados.
 9. **Perguntas frequentes** — acordeão acessível (`<details>/<summary>` ou botões com `aria-expanded`).
@@ -83,8 +86,8 @@ Mantenha, nesta ordem (ajustes de ordem só com justificativa de conversão):
 | **AutoTech** | Serviços automotivos | Apresentação dos serviços e orçamento |
 | **Studio Belle** | Beleza e estética | Serviços e agendamento demonstrativo |
 
-- Cada página deve exibir de forma clara (topo e rodapé) que é um **exemplo fictício criado pela JC Marketing**. Nunca apresentar como cliente real, nem com depoimentos, números ou logos de clientes.
-- Cada página tem link de volta para os exemplos no site principal e CTA "Quero algo assim para o meu negócio" apontando para o contato da JC Marketing.
+- Cada página deve exibir de forma clara (topo e rodapé) que é um **exemplo fictício criado pela NARKIA DIGITAL**. Nunca apresentar como cliente real, nem com depoimentos, números ou logos de clientes.
+- Cada página tem link de volta para os exemplos no site principal e CTA "Quero algo assim para o meu negócio" apontando para o contato da NARKIA DIGITAL.
 - Depois de alterar uma demo, recapture as telas (`npm run screens`, com o preview rodando) e gere de novo o mini portfólio em PDF (`npm run mini-portfolio`).
 - Fluxos de pedido/orçamento/agendamento são **demonstrativos**: não simule envio bem-sucedido. Use uma mensagem honesta (ex.: "Demonstração — nenhum pedido é enviado") ou direcione para o contato real da agência.
 

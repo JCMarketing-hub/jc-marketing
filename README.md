@@ -1,6 +1,6 @@
-# Site JC Marketing
+# Site NARKIA DIGITAL
 
-Site institucional da JC Marketing, com três exemplos fictícios (Burger House, AutoTech e Studio Belle). É um site estático feito com [Vite](https://vite.dev), sem framework de interface, e pronto para o GitHub Pages.
+Site institucional da NARKIA DIGITAL (antiga JC Marketing), com três exemplos fictícios (Burger House, AutoTech e Studio Belle). É um site estático feito com [Vite](https://vite.dev), sem framework de interface, e pronto para o GitHub Pages.
 
 ## Requisitos
 
@@ -61,13 +61,22 @@ Links internos devem usar `{{base}}` (ex.: `{{base}}projetos/autotech/`) para fu
 
 | Token | Cor | Uso |
 |---|---|---|
-| `--jc-graphite` | `#171321` | Fundo |
-| `--jc-purple` | `#7C3AED` | Identidade e destaques |
-| `--jc-lilac` | `#C4B5FD` | Detalhes e foco |
-| `--jc-orange` | `#FF6B1A` | CTAs principais (texto grafite, para garantir contraste) |
-| `--jc-white` | `#F8F7FC` | Texto |
+Marca: **NARKIA DIGITAL** · slogan: *Tecnologia e criatividade para crescer.*
 
-As fontes são Manrope (principal) e Inter (alternativa), carregadas do Google Fonts.
+| Token | Cor | Uso |
+|---|---|---|
+| `--brand-graphite` | `#171321` | Fundo principal |
+| `--brand-purple` | `#7C3AED` | Destaques, botões secundários, elementos tecnológicos |
+| `--brand-lilac` | `#C4B5FD` | Textos secundários e foco |
+| `--brand-orange` | `#FF6B1A` | Chamadas de atenção e CTAs principais (texto grafite, para garantir contraste) |
+| `--brand-white` | `#F8F7FC` | Texto |
+
+- **Fontes:** Montserrat (títulos em Bold, textos em Regular) e Inter como apoio, carregadas do Google Fonts.
+- **Logotipo:** arquivos oficiais em `materiais/identidade-narkia/` (recortes da prancha de identidade). O comando `node scripts/prepare-brand.mjs` remove o fundo escuro da prancha, sem redesenhar o logo, e gera:
+  - `src/assets/brand/narkia-logo.webp` (cabeçalho e rodapé) e `narkia-logo.png` (PDF);
+  - `public/favicon.png` e `public/apple-touch-icon.png` (símbolo "A");
+  - `public/og-image.jpg` (imagem de compartilhamento 1200 × 630).
+- **Grafismos:** linhas roxa e laranja antes dos rótulos de seção e faixas diagonais no topo da página.
 
 ## Dados comerciais — dependem de configuração
 
@@ -113,7 +122,7 @@ npm run build
 
 ## Mini portfólio em PDF
 
-Material de 3 páginas A4 para enviar pelo WhatsApp: [`materiais/mini-portfolio-jc-marketing.pdf`](materiais/mini-portfolio-jc-marketing.pdf).
+Material de 3 páginas A4 para enviar pelo WhatsApp: [`materiais/mini-portfolio-narkia-digital.pdf`](materiais/mini-portfolio-narkia-digital.pdf).
 
 - Fonte editável: `materiais/mini-portfolio/mini-portfolio.html`. Os marcadores `{{...}}` recebem URL, WhatsApp, telefone e e-mail de `site.config.js`.
 - Imagens: as telas reais das demos em `src/assets/img/telas/`, convertidas para JPEG na geração.
@@ -151,4 +160,4 @@ No Git Bash do Windows, rode antes `export MSYS_NO_PATHCONV=1 MSYS2_ENV_CONV_EXC
 
 - Contatos preenchidos em `site.config.js`: WhatsApp, e-mail, telefone e Instagram. Região, LinkedIn e Facebook ficam ocultos por escolha.
 - Adicionar uma imagem de compartilhamento (`og:image`, PNG 1200×630) quando houver arte oficial.
-- O logotipo é tipográfico (`src/partials/logo.html` + estilos em `src/styles/base.css`) e o favicon fica em `public/favicon.svg`. Se houver um arquivo oficial do logo, substitua os dois.
+- Os PNGs do logo são recortes de baixa resolução da prancha (o principal tem 545 px de largura). Quando houver a versão vetorial oficial (SVG ou PDF), coloque-a em `materiais/identidade-narkia/` e atualize `src/partials/logo.html`.

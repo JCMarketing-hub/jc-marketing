@@ -1,12 +1,13 @@
 /**
- * Dados comerciais da JC Marketing — fonte única de verdade.
+ * Dados comerciais da NARKIA DIGITAL — fonte única de verdade.
  *
  * Preencha apenas com informações reais. Campos vazios ficam ocultos no site
  * e o formulário de contato só é habilitado quando há um canal configurado
  * (WhatsApp ou e-mail). Não use números ou e-mails de exemplo.
  */
 export default {
-  name: 'JC Marketing',
+  name: 'NARKIA DIGITAL',
+  slogan: 'Tecnologia e criatividade para crescer.',
   // Endereço público do site (usado em materiais como o mini portfólio em PDF).
   url: 'https://jcmarketing-hub.github.io/jc-marketing/',
   shortDescription:

@@ -2,7 +2,7 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <title>JC Marketing — Mini portfólio</title>
+    <title>{{name}} — Mini portfólio</title>
     <!--
       Fonte do mini portfólio em PDF (3 páginas A4).
       Não abra este arquivo direto para gerar o PDF: use `npm run mini-portfolio`,
@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=block"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=block"
     />
     <style>
       @page {
@@ -45,7 +45,7 @@
       body {
         background: var(--graphite);
         color: var(--white);
-        font-family: 'Manrope', 'Inter', sans-serif;
+        font-family: 'Montserrat', 'Inter', sans-serif;
       }
 
       /* Cada página tem o tamanho exato de uma folha A4 (794 × 1123 px a 96 dpi). */
@@ -72,29 +72,11 @@
         justify-content: space-between;
       }
 
-      .logo {
-        display: inline-flex;
-        align-items: center;
-        gap: 12px;
-        line-height: 1;
-      }
-
-      .logo-jc {
-        font-weight: 800;
-        font-size: 44px;
-        letter-spacing: -0.07em;
-        padding-right: 0.06em;
-        background: linear-gradient(100deg, #7c3aed 0%, #a855f7 45%, #ff6b1a 90%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-      }
-
-      .logo-word {
-        font-weight: 600;
-        font-size: 17px;
-        letter-spacing: 0.32em;
-        text-transform: uppercase;
+      /* Logotipo oficial da NARKIA DIGITAL (arquivo da identidade). */
+      .logo-img {
+        display: block;
+        width: auto;
+        height: 44px;
       }
 
       .page-num {
@@ -136,7 +118,8 @@
         padding-top: 18px;
         border-top: 1px solid var(--border);
         color: var(--muted);
-        font-size: 18px;
+        font-size: 16px;
+        white-space: nowrap;
         font-weight: 600;
       }
 
@@ -247,12 +230,12 @@
 
       /* ---------- Página 2 ---------- */
       .p2-head {
-        margin-top: 32px;
+        margin-top: 24px;
       }
 
       .p2-head h2 {
         margin-top: 12px;
-        font-size: 44px;
+        font-size: 40px;
       }
 
       .services {
@@ -281,7 +264,7 @@
       }
 
       .service h3 {
-        font-size: 27px;
+        font-size: 25px;
         font-weight: 800;
         letter-spacing: -0.02em;
         line-height: 1.15;
@@ -332,7 +315,7 @@
       }
 
       .service-wide h3 {
-        font-size: 27px;
+        font-size: 25px;
         font-weight: 800;
         letter-spacing: -0.02em;
         line-height: 1.15;
@@ -505,7 +488,7 @@
     <!-- ================= Página 1 — Apresentação ================= -->
     <section class="page">
       <div class="top">
-        <span class="logo"><span class="logo-jc">JC</span><span class="logo-word">Marketing</span></span>
+        <img class="logo-img" src="{{logo}}" alt="{{name}}" />
         <span class="page-num">01 / 03</span>
       </div>
 
@@ -549,7 +532,7 @@
     <!-- ================= Página 2 — Serviços ================= -->
     <section class="page">
       <div class="top">
-        <span class="logo"><span class="logo-jc">JC</span><span class="logo-word">Marketing</span></span>
+        <img class="logo-img" src="{{logo}}" alt="{{name}}" />
         <span class="page-num">02 / 03</span>
       </div>
 
@@ -597,7 +580,7 @@
     <!-- ================= Página 3 — Exemplos e contato ================= -->
     <section class="page">
       <div class="top">
-        <span class="logo"><span class="logo-jc">JC</span><span class="logo-word">Marketing</span></span>
+        <img class="logo-img" src="{{logo}}" alt="{{name}}" />
         <span class="page-num">03 / 03</span>
       </div>
 
@@ -652,7 +635,7 @@
       </div>
 
       <div class="footer">
-        <span>© {{year}} JC Marketing</span>
+        <span>© {{year}} {{name}}</span>
         <a href="{{siteUrl}}">{{siteUrl}}</a>
       </div>
     </section>

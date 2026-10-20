@@ -107,7 +107,8 @@ function whatsappFloat() {
 function seoTags(path) {
   if (!siteUrl) return '';
   const url = absoluteUrl(path);
-  return `<link rel="canonical" href="${url}" />\n    <meta property="og:url" content="${url}" />`;
+  const image = absoluteUrl('/og-image.jpg');
+  return `<link rel="canonical" href="${url}" />\n    <meta property="og:url" content="${url}" />\n    <meta property="og:image" content="${image}" />\n    <meta property="og:image:width" content="1200" />\n    <meta property="og:image:height" content="630" />\n    <meta property="og:image:alt" content="${escapeHtml(site.name)} — ${escapeHtml(site.slogan)}" />`;
 }
 
 function renderHtml(html, depth = 0) {

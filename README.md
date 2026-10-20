@@ -103,7 +103,10 @@ Burger House, AutoTech e Studio Belle são **fictícios**:
 
 ## Trabalhos reais
 
-A seção "Trabalhos reais" mostra posts de Instagram criados e gerenciados pela equipe, em mockups de celular. Cada imagem em `src/assets/img/trabalhos/` é uma grade 3 × 3 com 9 posts reais de um cliente.
+A seção "Trabalhos reais" tem duas partes:
+
+- **Sites e páginas:** três sites criados pela equipe, mostrados num notebook com tela rolável e num celular. As imagens ficam em `src/assets/img/trabalhos/sites/`. A versão `-desktop` é uma faixa com as melhores seções empilhadas, e a `-mobile` é o topo da versão de celular. Dois deles são propostas e aparecem identificados assim.
+- **Instagram:** posts criados e gerenciados pela equipe, em mockups de celular. Cada imagem em `src/assets/img/trabalhos/` é uma grade 3 × 3 com 9 posts reais de um cliente.
 
 Regras desta seção:
 - o texto mostra só o segmento do negócio, sem citar o nome do cliente;

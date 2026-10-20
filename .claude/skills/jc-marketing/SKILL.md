@@ -61,8 +61,10 @@ Mantenha, nesta ordem (ajustes de ordem só com justificativa de conversão):
    2. Página para divulgar um serviço ou uma promoção *(foco)*
    3. Cardápio ou catálogo on-line
    4. Artes para divulgação (inclui arte para impressos; a impressão fica com o cliente)
-   5. Sua empresa certa no Google (Perfil da Empresa no Google)
-5. **Exemplos** — cards dos três exemplos com selo "Exemplo fictício" e a frase "não são clientes reais".
+   5. Gestão de Instagram (calendário de posts, artes, legendas e publicação)
+   6. Sua empresa certa no Google (Perfil da Empresa no Google)
+5. **Trabalhos reais** — mockups de celular com 9 posts reais de Instagram por cliente (`src/assets/img/trabalhos/`). Mostrar só o segmento, nunca o nome do cliente no texto, sem links para os perfis e sem números de engajamento. Clientes autorizaram logo e nome visíveis dentro das artes. Evitar fotos de pacientes, de crianças e de celebridades.
+6. **Exemplos** — cards dos três exemplos com selo "Exemplo fictício" e a frase "não são clientes reais".
 6. **Por que conversar com a NARKIA DIGITAL** — diferenciais de atendimento, sem repetir os serviços.
 7. **Como funciona** — conversa, orçamento gratuito, criação (até 2 rodadas de ajustes), publicação, atualizações combinadas à parte.
 8. **Quem somos** — sócios Juliana Moreira (formada em Marketing, 6 anos na área, vendas consultivas) e Paul Lugo (Tecnologia da Informação há mais de 15 anos). Sem fotos por enquanto. Não atribua especialidades, números ou resultados não informados.

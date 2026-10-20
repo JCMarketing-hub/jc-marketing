@@ -1463,3 +1463,125 @@
     display: none;
   }
 }
+
+/* ==========================================================================
+   Serviço em largura total (Gestão de Instagram)
+   ========================================================================== */
+.service-card.is-wide {
+  grid-column: 1 / -1;
+}
+
+/* ==========================================================================
+   Trabalhos reais (mockups de celular)
+   ========================================================================== */
+.cases {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px 28px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.case {
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  gap: 10px;
+  text-align: center;
+}
+
+/* Moldura de celular genérica (sem reproduzir a interface do Instagram). */
+.case-phone {
+  width: min(100%, 300px);
+  padding: 12px 10px 16px;
+  border: 1px solid #3b3450;
+  border-radius: 34px;
+  background: #0d0a14;
+  box-shadow: 0 30px 60px -30px rgb(0 0 0 / 0.8), 0 0 0 1px rgb(255 255 255 / 0.03) inset;
+  transition: transform 0.3s var(--ease), border-color 0.3s var(--ease);
+}
+
+.case:hover .case-phone {
+  transform: translateY(-4px);
+  border-color: rgb(124 58 237 / 0.6);
+}
+
+.case-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 8px 12px;
+}
+
+.case-avatar {
+  flex: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--brand-purple), var(--brand-orange));
+}
+
+.case-lines {
+  display: grid;
+  flex: 1;
+  gap: 6px;
+}
+
+.case-lines b,
+.case-lines i {
+  display: block;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--surface-2);
+}
+
+.case-lines b {
+  width: 55%;
+}
+
+.case-lines i {
+  width: 80%;
+  opacity: 0.6;
+}
+
+.case-phone img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.case h3 {
+  margin-top: 8px;
+  font-size: 1.05rem;
+}
+
+.case p {
+  max-width: 30ch;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 960px) {
+  .cases {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .cases {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Com seis serviços, o painel do Google não estica até o fim da grade. */
+@media (min-width: 1081px) {
+  .visibility-card {
+    align-self: start;
+  }
+
+  .visibility-card .btn {
+    margin-top: 8px;
+  }
+}

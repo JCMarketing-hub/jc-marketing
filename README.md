@@ -101,6 +101,16 @@ Burger House, AutoTech e Studio Belle são **fictícios**:
 - não há preços, depoimentos ou resultados;
 - pedido, orçamento e agendamento são demonstrativos e informam que nada foi enviado.
 
+## Trabalhos reais
+
+A seção "Trabalhos reais" mostra posts de Instagram criados e gerenciados pela equipe, em mockups de celular. Cada imagem em `src/assets/img/trabalhos/` é uma grade 3 × 3 com 9 posts reais de um cliente.
+
+Regras desta seção:
+- o texto mostra só o segmento do negócio, sem citar o nome do cliente;
+- não há links para os perfis nem números de seguidores ou engajamento;
+- os clientes autorizaram que logo e nome apareçam dentro das próprias artes;
+- não usamos fotos de pacientes, de crianças ou de celebridades.
+
 ## Imagens e créditos
 
 As fotos dos exemplos fictícios são do [Unsplash](https://unsplash.com) e usadas sob a [Licença Unsplash](https://unsplash.com/license). O crédito aparece no fim de cada página.

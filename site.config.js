@@ -25,7 +25,7 @@ export default {
 
   social: {
     // URLs completas dos perfis oficiais.
-    instagram: 'https://www.instagram.com/julianajuty/',
+    instagram: 'https://www.instagram.com/narkia.digital/',
     linkedin: '',
     facebook: '',
   },
